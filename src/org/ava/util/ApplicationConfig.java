@@ -6,7 +6,7 @@ package org.ava.util;
  * Moreover there some other data, the system is using while runtime.
  *
  * @author Kevin
- * @version 1.3
+ * @version 1.4
  * @since 15.03.2016
  *
  * Changelog:
@@ -14,8 +14,10 @@ package org.ava.util;
  * 		-- Added default plugins directory './plugins/'
  * 2016-05-24 Constantin v1.2
  * 		-- Added matching treshold
- * * 2016-05-28 Constantin v1.3
+ * 2016-05-28 Constantin v1.3
  * 		-- Added activation phrase
+ * 2016-06-03 Constantin v1.4
+ * 		-- Removed logDir setting
  */
 public class ApplicationConfig {
 
@@ -34,9 +36,7 @@ public class ApplicationConfig {
 	/**
 	 * Variables for log setting.
 	 */
-	private static String logDir;
 	private static String logLevel;
-	private static String logName;
 
 	/**
 	 * Matching settings.
@@ -77,28 +77,12 @@ public class ApplicationConfig {
 		ApplicationConfig.configName = configName;
 	}
 
-	public static String getLogDir() {
-		return logDir;
-	}
-
-	public static void setLogDir(String logDir) {
-		ApplicationConfig.logDir = logDir;
-	}
-
 	public static String getLogLevel() {
 		return logLevel;
 	}
 
 	public static void setLogLevel(String logLevel) {
 		ApplicationConfig.logLevel = logLevel;
-	}
-
-	public static String getLogName() {
-		return logName;
-	}
-
-	public static void setLogName(String logName) {
-		ApplicationConfig.logName = logName;
 	}
 
 	public static String getAppname() {
@@ -126,7 +110,7 @@ public class ApplicationConfig {
 	}
 
 	public static void setActivationPhrase(String activationPhrase) {
-		ApplicationConfig.activationPhrase  = activationPhrase;		
+		ApplicationConfig.activationPhrase  = activationPhrase;
 	}
 
 	public static String getActivationPhrase() {

@@ -109,12 +109,12 @@ public class Main {
 				case "-pluginDir":
 					ApplicationConfig.setPluginDir(args[i+1]);
 					i++;
-					log.info("pluginDir changed by command line to " +  args[i+1]);
+					log.info("pluginDir changed by command line to " +  ApplicationConfig.getPluginDir());
 					break;
-				case "-loginLevel":
+				case "-logLevel":
 					ApplicationConfig.setLogLevel(args[i+1]);
 					i++;
-					log.info("loginLevel changed by command line to " +  args[i+1]);
+					log.info("logLevel changed by command line to " +  ApplicationConfig.getLogLevel());
 					break;
 				case "-cui_active":
 					String cui_active = args[i+1];
@@ -142,8 +142,6 @@ public class Main {
 
 		ApplicationConfig.setConfigDir(loader.getPropertie("CONFIGDIR"));
 		ApplicationConfig.setPluginDir(loader.getPropertie("PLUGINDIR"));
-		ApplicationConfig.setLogDir(loader.getPropertie("LOGDIR"));
-		ApplicationConfig.setLogName(loader.getPropertie("LOGNAME"));
 		ApplicationConfig.setLogLevel(loader.getPropertie("LOGLEVEL"));
 		try {
 			ApplicationConfig.setMatchingTreshold(Double.parseDouble(loader.getPropertie("MATCHING_TRESHOLD")));
@@ -164,16 +162,6 @@ public class Main {
 	private static void setLogConfiguration() {
 		log.debug("Setting Log4j log settings.");
 	    LoggerContext ctx = (LoggerContext)LogManager.getContext(false);
-
-		String logDir = ApplicationConfig.getLogDir();
-		String logName = ApplicationConfig.getLogName();
-		System.setProperty("LOG_DIR", logDir);
-		System.setProperty("LOG_NAME", logName);
-		ctx.reconfigure();
-
-		//String currentLocation ;
-		String newLocation = logDir + "/" + logName;
-		log.info("Log file location ist set from to " + newLocation);
 
 	    // change root logger
 	    Configuration config = ctx.getConfiguration();

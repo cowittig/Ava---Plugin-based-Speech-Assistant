@@ -13,13 +13,13 @@
 
     <File name="log4jLogFile" fileName="${LOG_DIR}${LOG_NAME}" append="false">
         <PatternLayout pattern="${PATTERN}"/>
-    </File>             
+    </File>
   </appenders>
 
-  <loggers>     
-    <root level="all">
-      <appender-ref ref="Console"/>
-      <appender-ref ref="log4jLogFile" level="ALL"/>
-    </root>    
+  <loggers>
+    <root level="INFO">
+      <appender-ref ref="Console" />
+      <appender-ref ref="log4jLogFile" />
+    </root>
   </loggers>
 </configuration>

@@ -1,184 +1,94 @@
-INFO  2016-06-03 14:02:46,571 [main] org.ava.Main:main(36): Ava started
-INFO  2016-06-03 14:02:46,572 [main] org.ava.Main:main(37): Version 1.0
-DEBUG 2016-06-03 14:02:46,586 [main] org.ava.util.PropertiesFileLoader:<init>(64): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:46,586 [main] org.ava.util.PropertiesFileLoader:<init>(65): PropertiesFilePath is set to: ./res/
-INFO  2016-06-03 14:02:46,586 [main] org.ava.util.PropertiesFileLoader:<init>(66): PropertiesFileName is set to: ava.properties
-DEBUG 2016-06-03 14:02:46,587 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: ./res/ava.properties
-INFO  2016-06-03 14:02:46,590 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file './res/ava.properties' loaded.
-INFO  2016-06-03 14:02:46,590 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(280): Validating ava.properties
-DEBUG 2016-06-03 14:02:46,590 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(289): Validate property with key PLUGINDIR. -> value is './plugins/'.
-DEBUG 2016-06-03 14:02:46,591 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(289): Validate property with key CONFIGDIR. -> value is './res/'.
-DEBUG 2016-06-03 14:02:46,591 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(289): Validate property with key LOGDIR. -> value is 'C:/temp/logDir/'.
-DEBUG 2016-06-03 14:02:46,591 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(289): Validate property with key LOGLEVEL. -> value is 'DEBUG'.
-DEBUG 2016-06-03 14:02:46,591 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(289): Validate property with key LOGNAME. -> value is 'ava_SpeechRecognition.log'.
-DEBUG 2016-06-03 14:02:46,591 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(289): Validate property with key CUI_ACTIVE. -> value is 'false'.
-INFO  2016-06-03 14:02:46,591 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(295): Properties file 'ava.properties' ok.
-DEBUG 2016-06-03 14:02:46,592 [main] org.ava.Main:initApplicationConfig(141): Initialze ApplicationConfig object with data from the properties file.
-DEBUG 2016-06-03 14:02:46,592 [main] org.ava.Main:main(69): 0 arguments are given with the program start form command line.
-DEBUG 2016-06-03 14:02:46,592 [main] org.ava.Main:setLogConfiguration(165): Setting Log4j log settings.
-INFO  2016-06-03 14:02:46,624 [main] org.ava.Main:setLogConfiguration(176): Log file location ist set from to C:/temp/logDir//ava_SpeechRecognition.log
-INFO  2016-06-03 14:02:46,625 [main] org.ava.Main:setLogConfiguration(185): Ava log level set to DEBUG
-DEBUG 2016-06-03 14:02:46,956 [main] org.ava.pluginengine.PluginManager:<init>(49): Created PluginManager.
-DEBUG 2016-06-03 14:02:46,957 [main] org.ava.pluginengine.PluginManager:initialize(53): Initializing PluginManager.
-DEBUG 2016-06-03 14:02:46,957 [main] org.ava.pluginengine.PluginManager:loadPluginsFromLastSession(145): Load plugins that had activation status 'ACTIVATED' last session.
-DEBUG 2016-06-03 14:02:46,960 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:46,960 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
-INFO  2016-06-03 14:02:46,961 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
-DEBUG 2016-06-03 14:02:46,961 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
-INFO  2016-06-03 14:02:46,963 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
-DEBUG 2016-06-03 14:02:46,964 [main] org.ava.pluginengine.PluginManager:loadPluginsFromLastSession(156): Plugin from last session found: .\plugins\spotify\ava-spotify-0.1.jar
-DEBUG 2016-06-03 14:02:46,964 [main] org.ava.pluginengine.PluginManager:discoverPlugins(164): Search plugin directory './plugins/' for plugins.
-DEBUG 2016-06-03 14:02:46,991 [main] org.ava.pluginengine.PluginManager:discoverPlugins(175): 4 Plugins found.
-DEBUG 2016-06-03 14:02:46,991 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 0
-DEBUG 2016-06-03 14:02:46,991 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:46,991 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\cmusphinx\
-INFO  2016-06-03 14:02:46,992 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-cmu-0.1.properties
-DEBUG 2016-06-03 14:02:46,992 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\cmusphinx\ava-cmu-0.1.properties
-INFO  2016-06-03 14:02:46,998 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\cmusphinx\ava-cmu-0.1.properties' loaded.
-DEBUG 2016-06-03 14:02:47,001 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@42f93a98):
+INFO  2016-06-03 16:47:26,617 [main] org.ava.Main:main(36): Ava started
+INFO  2016-06-03 16:47:26,618 [main] org.ava.Main:main(37): Version 1.0
+INFO  2016-06-03 16:47:26,622 [main] org.ava.util.PropertiesFileLoader:<init>(65): PropertiesFilePath is set to: ./res/
+INFO  2016-06-03 16:47:26,622 [main] org.ava.util.PropertiesFileLoader:<init>(66): PropertiesFileName is set to: ava.properties
+INFO  2016-06-03 16:47:26,623 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file './res/ava.properties' loaded.
+INFO  2016-06-03 16:47:26,624 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(280): Validating ava.properties
+INFO  2016-06-03 16:47:26,626 [main] org.ava.Main:setLogConfiguration(173): Ava log level set to DEBUG
+DEBUG 2016-06-03 16:47:26,809 [main] org.ava.pluginengine.PluginManager:<init>(49): Created PluginManager.
+DEBUG 2016-06-03 16:47:26,810 [main] org.ava.pluginengine.PluginManager:initialize(53): Initializing PluginManager.
+DEBUG 2016-06-03 16:47:26,810 [main] org.ava.pluginengine.PluginManager:loadPluginsFromLastSession(145): Load plugins that had activation status 'ACTIVATED' last session.
+DEBUG 2016-06-03 16:47:26,814 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-03 16:47:26,815 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
+INFO  2016-06-03 16:47:26,815 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
+DEBUG 2016-06-03 16:47:26,816 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
+INFO  2016-06-03 16:47:26,818 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
+DEBUG 2016-06-03 16:47:26,818 [main] org.ava.pluginengine.PluginManager:discoverPlugins(164): Search plugin directory './plugins/' for plugins.
+DEBUG 2016-06-03 16:47:26,838 [main] org.ava.pluginengine.PluginManager:discoverPlugins(175): 4 Plugins found.
+DEBUG 2016-06-03 16:47:26,839 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 0
+DEBUG 2016-06-03 16:47:26,840 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-03 16:47:26,840 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\cmusphinx\
+INFO  2016-06-03 16:47:26,840 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-cmu-0.1.properties
+DEBUG 2016-06-03 16:47:26,840 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\cmusphinx\ava-cmu-0.1.properties
+INFO  2016-06-03 16:47:26,841 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\cmusphinx\ava-cmu-0.1.properties' loaded.
+DEBUG 2016-06-03 16:47:26,843 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@7a187f14):
 	id = 0
 	name = CMU SPhinx4 ASR
 	version = 0.1
 	fqnPluginClass = com.stt.STTPluginImplementation
-DEBUG 2016-06-03 14:02:47,008 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'CMU SPhinx4 ASR' created, with properties org.ava.pluginengine.PluginProperties@42f93a98. Instance: org.ava.pluginengine.PluginWrapper@c46bcd4
-DEBUG 2016-06-03 14:02:47,009 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'CMU SPhinx4 ASR' (ID: 0) discovered.
-DEBUG 2016-06-03 14:02:47,009 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 1
-DEBUG 2016-06-03 14:02:47,009 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:47,009 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\freetts\
-INFO  2016-06-03 14:02:47,010 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-freetts-0.1.properties
-DEBUG 2016-06-03 14:02:47,010 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\freetts\ava-freetts-0.1.properties
-INFO  2016-06-03 14:02:47,012 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\freetts\ava-freetts-0.1.properties' loaded.
-DEBUG 2016-06-03 14:02:47,013 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@3234e239):
+DEBUG 2016-06-03 16:47:26,847 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'CMU SPhinx4 ASR' created, with properties org.ava.pluginengine.PluginProperties@7a187f14. Instance: org.ava.pluginengine.PluginWrapper@6f195bc3
+DEBUG 2016-06-03 16:47:26,848 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'CMU SPhinx4 ASR' (ID: 0) discovered.
+DEBUG 2016-06-03 16:47:26,848 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 1
+DEBUG 2016-06-03 16:47:26,848 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-03 16:47:26,848 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\freetts\
+INFO  2016-06-03 16:47:26,848 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-freetts-0.1.properties
+DEBUG 2016-06-03 16:47:26,849 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\freetts\ava-freetts-0.1.properties
+INFO  2016-06-03 16:47:26,849 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\freetts\ava-freetts-0.1.properties' loaded.
+DEBUG 2016-06-03 16:47:26,849 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@51e2adc7):
 	id = 1
 	name = FreeTTS
 	version = 0.1
 	fqnPluginClass = org.ava.freetts.FreeTTSPlugin
-DEBUG 2016-06-03 14:02:47,013 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'FreeTTS' created, with properties org.ava.pluginengine.PluginProperties@3234e239. Instance: org.ava.pluginengine.PluginWrapper@3d921e20
-DEBUG 2016-06-03 14:02:47,013 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'FreeTTS' (ID: 1) discovered.
-DEBUG 2016-06-03 14:02:47,014 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 2
-DEBUG 2016-06-03 14:02:47,014 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:47,015 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\spotify\
-INFO  2016-06-03 14:02:47,015 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-spotify-0.1.properties
-DEBUG 2016-06-03 14:02:47,015 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\spotify\ava-spotify-0.1.properties
-INFO  2016-06-03 14:02:47,017 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\spotify\ava-spotify-0.1.properties' loaded.
-DEBUG 2016-06-03 14:02:47,018 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@36b4cef0):
+DEBUG 2016-06-03 16:47:26,850 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'FreeTTS' created, with properties org.ava.pluginengine.PluginProperties@51e2adc7. Instance: org.ava.pluginengine.PluginWrapper@1a8a8f7c
+DEBUG 2016-06-03 16:47:26,850 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'FreeTTS' (ID: 1) discovered.
+DEBUG 2016-06-03 16:47:26,850 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 2
+DEBUG 2016-06-03 16:47:26,850 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-03 16:47:26,850 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\spotify\
+INFO  2016-06-03 16:47:26,850 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-spotify-0.1.properties
+DEBUG 2016-06-03 16:47:26,850 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\spotify\ava-spotify-0.1.properties
+INFO  2016-06-03 16:47:26,851 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\spotify\ava-spotify-0.1.properties' loaded.
+DEBUG 2016-06-03 16:47:26,851 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@2353b3e6):
 	id = 2
 	name = Spotify
 	version = 0.1
 	fqnPluginClass = org.ava.spotify.SpotifyPlugin
-DEBUG 2016-06-03 14:02:47,018 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'Spotify' created, with properties org.ava.pluginengine.PluginProperties@36b4cef0. Instance: org.ava.pluginengine.PluginWrapper@fad74ee
-DEBUG 2016-06-03 14:02:47,018 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'Spotify' (ID: 2) discovered.
-DEBUG 2016-06-03 14:02:47,018 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 3
-DEBUG 2016-06-03 14:02:47,019 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:47,019 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\wolframalpha\
-INFO  2016-06-03 14:02:47,019 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-wolframalpha-0.1.properties
-DEBUG 2016-06-03 14:02:47,019 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\wolframalpha\ava-wolframalpha-0.1.properties
-INFO  2016-06-03 14:02:47,022 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\wolframalpha\ava-wolframalpha-0.1.properties' loaded.
-DEBUG 2016-06-03 14:02:47,022 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@1a1d6a08):
+DEBUG 2016-06-03 16:47:26,851 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'Spotify' created, with properties org.ava.pluginengine.PluginProperties@2353b3e6. Instance: org.ava.pluginengine.PluginWrapper@631330c
+DEBUG 2016-06-03 16:47:26,851 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'Spotify' (ID: 2) discovered.
+DEBUG 2016-06-03 16:47:26,852 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 3
+DEBUG 2016-06-03 16:47:26,852 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-03 16:47:26,852 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\wolframalpha\
+INFO  2016-06-03 16:47:26,852 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-wolframalpha-0.1.properties
+DEBUG 2016-06-03 16:47:26,852 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\wolframalpha\ava-wolframalpha-0.1.properties
+INFO  2016-06-03 16:47:26,853 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\wolframalpha\ava-wolframalpha-0.1.properties' loaded.
+DEBUG 2016-06-03 16:47:26,853 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@42f93a98):
 	id = 3
 	name = Wolfram Alpha
 	version = 0.1
 	fqnPluginClass = com.ava.PluginEntry
-DEBUG 2016-06-03 14:02:47,022 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'Wolfram Alpha' created, with properties org.ava.pluginengine.PluginProperties@1a1d6a08. Instance: org.ava.pluginengine.PluginWrapper@37d31475
-DEBUG 2016-06-03 14:02:47,022 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'Wolfram Alpha' (ID: 3) discovered.
-DEBUG 2016-06-03 14:02:47,023 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(412): Clean ava configuration file.
-DEBUG 2016-06-03 14:02:47,023 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:47,023 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
-INFO  2016-06-03 14:02:47,023 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
-DEBUG 2016-06-03 14:02:47,023 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
-INFO  2016-06-03 14:02:47,024 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
-DEBUG 2016-06-03 14:02:47,025 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(422): Removed key 'plugins.lastsessionloaded.2'.
-DEBUG 2016-06-03 14:02:47,025 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:47,025 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
-INFO  2016-06-03 14:02:47,025 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
-DEBUG 2016-06-03 14:02:47,025 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
-INFO  2016-06-03 14:02:47,026 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
-DEBUG 2016-06-03 14:02:47,026 [main] org.ava.util.PropertiesFileLoader:setProperty(119): setProperty is called with arguments key 'plugins.lastsessionloaded.2' and value '.\plugins\spotify\ava-spotify-0.1.jar'.
-INFO  2016-06-03 14:02:47,027 [main] org.ava.util.PropertiesFileLoader:setProperty(132): Key with value 'plugins.lastsessionloaded.2 : .\plugins\spotify\ava-spotify-0.1.jar' added/modified to the Properties file ava.properties
-DEBUG 2016-06-03 14:02:47,027 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
-INFO  2016-06-03 14:02:47,035 [main] org.ava.util.PropertiesFileLoader:setProperty(136): The updated properties were written to the properties file .\res\ava.properties
-DEBUG 2016-06-03 14:02:47,035 [main] org.ava.pluginengine.PluginManager:writeLoadedPluginToPropertyFile(442): Wrote activated plugin to ava configuration file:
-	key: plugins.lastsessionloaded.2
-	value: .\plugins\spotify\ava-spotify-0.1.jar
-DEBUG 2016-06-03 14:02:47,035 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
-DEBUG 2016-06-03 14:02:47,037 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(433): Finished cleaning ava configuration file.
-DEBUG 2016-06-03 14:02:47,037 [main] org.ava.pluginengine.PluginManager:startPlugin(91): Trying to start plugin: 'Spotify' (ID: 2)
-DEBUG 2016-06-03 14:02:47,050 [main] org.ava.pluginengine.PluginWrapper:getPluginInstance(97): Instance for plugin 'Spotify' created.
-DEBUG 2016-06-03 14:02:47,052 [main] org.ava.spotify.SpotifyController:init(56): Initialize Spotify plugin.
-DEBUG 2016-06-03 14:02:47,721 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:47,721 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: C:\Users\conwitti\git\plugin-based-speech-recognition\code\workspace\Ava core\.\plugins\spotify\res\
-INFO  2016-06-03 14:02:47,721 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: spotify-config.properties
-DEBUG 2016-06-03 14:02:47,721 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: C:\Users\conwitti\git\plugin-based-speech-recognition\code\workspace\Ava core\.\plugins\spotify\res\spotify-config.properties
-INFO  2016-06-03 14:02:47,723 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file 'C:\Users\conwitti\git\plugin-based-speech-recognition\code\workspace\Ava core\.\plugins\spotify\res\spotify-config.properties' loaded.
-DEBUG 2016-06-03 14:02:47,723 [main] org.ava.spotify.SpotifyConfiguration:setMarket(37): Spotify market set to: de
-INFO  2016-06-03 14:02:47,726 [main] org.ava.spotify.SpotifyPlugin:start(42): Spotify plugin started.
-DEBUG 2016-06-03 14:02:47,726 [main] org.ava.pluginengine.PluginManager:startPlugin(98): Successfully started plugin 'Spotify' (ID: 2)
-DEBUG 2016-06-03 14:02:47,726 [main] org.ava.pluginengine.PluginManager:initialize(58): PluginManager initialized.
-DEBUG 2016-06-03 14:02:47,728 [main] org.ava.matching.DefaultMatchingEngine:<init>(100): Matching engine created [treshold = 0.9].
-DEBUG 2016-06-03 14:02:47,729 [main] org.ava.matching.DefaultMatchingEngine:addApplicationCommands(111): Adding Commands of plugin '2' to matching engine
-DEBUG 2016-06-03 14:02:47,730 [main] org.ava.matching.DefaultMatchingEngine:<init>(46): Command structure created [fixed part = 'search album', length fixed part = 2, has variable part = true]
-DEBUG 2016-06-03 14:02:47,731 [main] org.ava.matching.DefaultMatchingEngine:<init>(46): Command structure created [fixed part = 'search artist', length fixed part = 2, has variable part = true]
-DEBUG 2016-06-03 14:02:47,731 [main] org.ava.matching.DefaultMatchingEngine:<init>(46): Command structure created [fixed part = 'search track', length fixed part = 2, has variable part = true]
-DEBUG 2016-06-03 14:02:47,731 [main] org.ava.matching.DefaultMatchingEngine:addApplicationCommands(121): Finished adding commands of plugin '2' to matching engine
-DEBUG 2016-06-03 14:02:47,733 [main] org.ava.eventhandling.STTEventBus:<init>(38): STTEventBus created.
-DEBUG 2016-06-03 14:02:47,735 [main] org.ava.eventhandling.UIEventBus:<init>(47): UIEventBus created.
-DEBUG 2016-06-03 14:02:47,736 [main] org.ava.eventhandling.TTSEventBus:<init>(24): TTSEventBus created.
-DEBUG 2016-06-03 14:02:47,738 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRecognizedListener(59): Add UtteranceRecognizedListener. Listener: org.ava.AvaControl$1@17baae6e
-DEBUG 2016-06-03 14:02:47,738 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRecognizedListener(61): Adding UtteranceRecognizedListener: true
-DEBUG 2016-06-03 14:02:47,740 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRequestedListener(100): Add UtteranceRequestedListener. Listener: org.ava.AvaControl$2@69379752
-DEBUG 2016-06-03 14:02:47,740 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRequestedListener(102): Adding UtteranceRequestedListener: true
-DEBUG 2016-06-03 14:02:47,741 [main] org.ava.eventhandling.UIEventBus:registerCommandEnteredListener(98): Add CommandEnteredListener. Listener: org.ava.AvaControl$3@27fe3806
-DEBUG 2016-06-03 14:02:47,741 [main] org.ava.eventhandling.UIEventBus:registerCommandEnteredListener(100): Adding CommandEnteredListener: true
-DEBUG 2016-06-03 14:02:47,743 [main] org.ava.eventhandling.UIEventBus:registerPluginActivationStateChangedListener(85): Add PluginActivationStateChangedListener. Listener: org.ava.AvaControl$4@5f71c76a
-DEBUG 2016-06-03 14:02:47,744 [main] org.ava.eventhandling.UIEventBus:registerPluginActivationStateChangedListener(87): Adding PluginActivationStateChangedListener: true
-DEBUG 2016-06-03 14:02:47,745 [main] org.ava.eventhandling.UIEventBus:registerShutdownTriggeredListener(72): Add ShutdownTriggeredListener. Listener: org.ava.AvaControl$5@1d7acb34
-DEBUG 2016-06-03 14:02:47,746 [main] org.ava.eventhandling.UIEventBus:registerShutdownTriggeredListener(74): Adding ShutdownTriggeredListener: true
-DEBUG 2016-06-03 14:02:47,747 [main] org.ava.eventhandling.TTSEventBus:registerSpeakListener(43): Add SpeakListener. Listener: org.ava.AvaControl$6@48a242ce
-DEBUG 2016-06-03 14:02:47,748 [main] org.ava.eventhandling.TTSEventBus:registerSpeakListener(45): Adding SpeakListener: true
-DEBUG 2016-06-03 14:02:50,344 [main] org.ava.CUI:<init>(51): Creating instance of class CUI
-DEBUG 2016-06-03 14:02:50,345 [main] org.ava.CUI:<init>(55): Building the menue string to display the menu.
-DEBUG 2016-06-03 14:02:50,345 [main] org.ava.CUI:<init>(74): Building the help string. 
-DEBUG 2016-06-03 14:02:50,345 [main] org.ava.CUI:<init>(91): Open a InputStreamReader(System.in)
-DEBUG 2016-06-03 14:02:50,345 [main] org.ava.CUI:<init>(93): Open a BufferedReader
-DEBUG 2016-06-03 14:02:50,346 [main] org.ava.CUI:startConsoleControl(104): Starting the console user interface.
-INFO  2016-06-03 14:02:50,346 [main] org.ava.CUI:startConsoleControl(109): Console User Interface is activ. All log output will only be written to the log file.
-DEBUG 2016-06-03 14:02:50,348 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
-INFO  2016-06-03 14:02:51,931 [main] org.ava.CUI:getCommandLine(173): Read '-l' from console.
-DEBUG 2016-06-03 14:02:51,932 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter -l
-DEBUG 2016-06-03 14:02:51,937 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
-INFO  2016-06-03 14:02:54,131 [main] org.ava.CUI:getCommandLine(173): Read '-a 3' from console.
-DEBUG 2016-06-03 14:02:54,132 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter -a 3
-DEBUG 2016-06-03 14:02:54,141 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(35): PluginActivationStateChangedEvent created. PluginID: 3, new state: ACTIVATED
-DEBUG 2016-06-03 14:02:54,142 [main] org.ava.eventhandling.UIEventBus:firePluginActiavtionStateChangedEvent(174): Fire ActivationStateChangedEvent. Event: org.ava.eventhandling.PluginActivationStateChangedEvent@5e57643e, Listener: org.ava.AvaControl$4@5f71c76a
-DEBUG 2016-06-03 14:02:54,142 [main] org.ava.pluginengine.PluginManager:activatePlugin(347): PluginActivationState of plugin '3' changed to 'ACTIVATED'.
-DEBUG 2016-06-03 14:02:54,142 [main] org.ava.pluginengine.PluginManager:startPlugin(91): Trying to start plugin: 'Wolfram Alpha' (ID: 3)
-DEBUG 2016-06-03 14:02:54,149 [main] org.ava.pluginengine.PluginWrapper:getPluginInstance(97): Instance for plugin 'Wolfram Alpha' created.
-INFO  2016-06-03 14:02:54,149 [main] com.ava.PluginEntry:start(46): Plugin Wolfram Alpha Plugin starting.
-DEBUG 2016-06-03 14:02:54,150 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:54,151 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: C:\Users\conwitti\git\plugin-based-speech-recognition\code\workspace\Ava core\.\plugins\wolframalpha\res\
-INFO  2016-06-03 14:02:54,151 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: wa.properties
-DEBUG 2016-06-03 14:02:54,151 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: C:\Users\conwitti\git\plugin-based-speech-recognition\code\workspace\Ava core\.\plugins\wolframalpha\res\wa.properties
-INFO  2016-06-03 14:02:54,156 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file 'C:\Users\conwitti\git\plugin-based-speech-recognition\code\workspace\Ava core\.\plugins\wolframalpha\res\wa.properties' loaded.
-DEBUG 2016-06-03 14:02:54,306 [main] com.ava.WAExecuter:<init>(50): Initialize WAExecuter class. Arguemnts: String appid : L2H6WP-4EAK9WP67E
-DEBUG 2016-06-03 14:02:55,004 [main] com.ava.WAExecuter:<init>(53): Wolfram Alpha engine initialized.
-DEBUG 2016-06-03 14:02:55,004 [main] com.ava.WAExecuter:<init>(73): WAExecuter initialized.
-DEBUG 2016-06-03 14:02:55,004 [main] com.ava.PluginEntry:initCommands(82): Initialize commands...
-DEBUG 2016-06-03 14:02:55,004 [main] com.ava.commands.QueryExecution:<init>(22): Command 'QueryExecution' initialized.
-DEBUG 2016-06-03 14:02:55,005 [main] com.ava.PluginEntry:initCommands(90): Commands initialied. 
-DEBUG 2016-06-03 14:02:55,005 [main] org.ava.pluginengine.PluginManager:startPlugin(98): Successfully started plugin 'Wolfram Alpha' (ID: 3)
-DEBUG 2016-06-03 14:02:55,005 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 14:02:55,005 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
-INFO  2016-06-03 14:02:55,005 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
-DEBUG 2016-06-03 14:02:55,005 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
-INFO  2016-06-03 14:02:55,012 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
-DEBUG 2016-06-03 14:02:55,012 [main] org.ava.util.PropertiesFileLoader:setProperty(119): setProperty is called with arguments key 'plugins.lastsessionloaded.3' and value '.\plugins\wolframalpha\ava-wolframalpha-0.1.jar'.
-INFO  2016-06-03 14:02:55,012 [main] org.ava.util.PropertiesFileLoader:setProperty(132): Key with value 'plugins.lastsessionloaded.3 : .\plugins\wolframalpha\ava-wolframalpha-0.1.jar' added/modified to the Properties file ava.properties
-DEBUG 2016-06-03 14:02:55,012 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
-INFO  2016-06-03 14:02:55,013 [main] org.ava.util.PropertiesFileLoader:setProperty(136): The updated properties were written to the properties file .\res\ava.properties
-DEBUG 2016-06-03 14:02:55,013 [main] org.ava.pluginengine.PluginManager:writeLoadedPluginToPropertyFile(442): Wrote activated plugin to ava configuration file:
-	key: plugins.lastsessionloaded.3
-	value: .\plugins\wolframalpha\ava-wolframalpha-0.1.jar
-DEBUG 2016-06-03 14:02:55,013 [main] org.ava.matching.DefaultMatchingEngine:addApplicationCommands(111): Adding Commands of plugin '3' to matching engine
-DEBUG 2016-06-03 14:02:55,013 [main] org.ava.matching.DefaultMatchingEngine:<init>(46): Command structure created [fixed part = 'Wolfram Alpha*', length fixed part = 2, has variable part = false]
-DEBUG 2016-06-03 14:02:55,013 [main] org.ava.matching.DefaultMatchingEngine:addApplicationCommands(121): Finished adding commands of plugin '3' to matching engine
-DEBUG 2016-06-03 14:02:55,013 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-03 16:47:26,853 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'Wolfram Alpha' created, with properties org.ava.pluginengine.PluginProperties@42f93a98. Instance: org.ava.pluginengine.PluginWrapper@c46bcd4
+DEBUG 2016-06-03 16:47:26,853 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'Wolfram Alpha' (ID: 3) discovered.
+DEBUG 2016-06-03 16:47:26,853 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(412): Clean ava configuration file.
+DEBUG 2016-06-03 16:47:26,853 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-03 16:47:26,853 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
+INFO  2016-06-03 16:47:26,854 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
+DEBUG 2016-06-03 16:47:26,854 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
+INFO  2016-06-03 16:47:26,854 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
+DEBUG 2016-06-03 16:47:26,856 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
+DEBUG 2016-06-03 16:47:26,863 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(433): Finished cleaning ava configuration file.
+DEBUG 2016-06-03 16:47:26,863 [main] org.ava.pluginengine.PluginManager:initialize(58): PluginManager initialized.
+DEBUG 2016-06-03 16:47:26,865 [main] org.ava.matching.DefaultMatchingEngine:<init>(100): Matching engine created [treshold = 0.9].
+DEBUG 2016-06-03 16:47:26,866 [main] org.ava.eventhandling.STTEventBus:<init>(38): STTEventBus created.
+DEBUG 2016-06-03 16:47:26,867 [main] org.ava.eventhandling.UIEventBus:<init>(47): UIEventBus created.
+DEBUG 2016-06-03 16:47:26,869 [main] org.ava.eventhandling.TTSEventBus:<init>(24): TTSEventBus created.
+DEBUG 2016-06-03 16:47:26,869 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRecognizedListener(59): Add UtteranceRecognizedListener. Listener: org.ava.AvaControl$1@1a1d6a08
+DEBUG 2016-06-03 16:47:26,869 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRecognizedListener(61): Adding UtteranceRecognizedListener: true
+DEBUG 2016-06-03 16:47:26,870 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRequestedListener(100): Add UtteranceRequestedListener. Listener: org.ava.AvaControl$2@37d31475
+DEBUG 2016-06-03 16:47:26,870 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRequestedListener(102): Adding UtteranceRequestedListener: true
+DEBUG 2016-06-03 16:47:26,871 [main] org.ava.eventhandling.UIEventBus:registerCommandEnteredListener(98): Add CommandEnteredListener. Listener: org.ava.AvaControl$3@27808f31
+DEBUG 2016-06-03 16:47:26,871 [main] org.ava.eventhandling.UIEventBus:registerCommandEnteredListener(100): Adding CommandEnteredListener: true
+DEBUG 2016-06-03 16:47:26,872 [main] org.ava.eventhandling.UIEventBus:registerPluginActivationStateChangedListener(85): Add PluginActivationStateChangedListener. Listener: org.ava.AvaControl$4@436e852b
+DEBUG 2016-06-03 16:47:26,872 [main] org.ava.eventhandling.UIEventBus:registerPluginActivationStateChangedListener(87): Adding PluginActivationStateChangedListener: true
+DEBUG 2016-06-03 16:47:26,873 [main] org.ava.eventhandling.UIEventBus:registerShutdownTriggeredListener(72): Add ShutdownTriggeredListener. Listener: org.ava.AvaControl$5@32d2fa64
+DEBUG 2016-06-03 16:47:26,873 [main] org.ava.eventhandling.UIEventBus:registerShutdownTriggeredListener(74): Adding ShutdownTriggeredListener: true
+DEBUG 2016-06-03 16:47:26,874 [main] org.ava.eventhandling.TTSEventBus:registerSpeakListener(43): Add SpeakListener. Listener: org.ava.AvaControl$6@1d8d30f7
+DEBUG 2016-06-03 16:47:26,874 [main] org.ava.eventhandling.TTSEventBus:registerSpeakListener(45): Adding SpeakListener: true
