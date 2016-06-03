@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+	<Properties>
+		<Property name="LOG_DIR">.\</Property>
+		<Property name="LOG_NAME">ava.log</Property>
+		<Property name="PATTERN">%-5level %d [%t] %c:%M(%L): %m%n</Property>
+	</Properties>
+	<appenders>
+
+	<Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="${PATTERN}"/>
+    </Console>
+
+    <File name="log4jLogFile" fileName="${LOG_DIR}${LOG_NAME}" append="false">
+        <PatternLayout pattern="${PATTERN}"/>
+    </File>             
+  </appenders>
+
+  <loggers>     
+    <root level="all">
+      <appender-ref ref="Console"/>
+      <appender-ref ref="log4jLogFile" level="ALL"/>
+    </root>    
+  </loggers>
+</configuration>
