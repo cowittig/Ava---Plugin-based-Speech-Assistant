@@ -82,7 +82,17 @@ public class PluginWrapper {
 				instance = null;
 			}
 
-			URLClassLoader pluginClassLoader = new URLClassLoader(urlArr, this.getClass().getClassLoader());
+			ClassLoader pluginClassLoader = new URLClassLoader(urlArr, this.getClass().getClassLoader());
+			
+			// dirty fix for MaryTTS Plugin
+			// MaryTTS code relies on the System Class Loader to locate some classes. Therefore when we try to
+			// load it with the URLClassLoader MayTTS cannot locate its classes.
+			// The issue has been already reported to the MaryTTS team by other people in May 2016
+			// https://github.com/marytts/marytts/issues/524
+			if( properties.getName().equals("MaryTTS") ) {
+				Thread.currentThread().setContextClassLoader(pluginClassLoader);
+			}
+			
 			try {
 				//instance = (Plugin) pluginClassLoader.loadClass(properties.getFqnPluginClass()).newInstance();
 				instance = (Plugin) Class.forName(properties.getFqnPluginClass(), true, pluginClassLoader).newInstance();

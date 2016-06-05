@@ -1,196 +1,533 @@
-INFO  2016-06-03 21:27:10,653 [main] org.ava.Main:main(36): Ava started
-INFO  2016-06-03 21:27:10,654 [main] org.ava.Main:main(37): Version 1.0
-INFO  2016-06-03 21:27:10,656 [main] org.ava.util.PropertiesFileLoader:<init>(65): PropertiesFilePath is set to: ./res/
-INFO  2016-06-03 21:27:10,656 [main] org.ava.util.PropertiesFileLoader:<init>(66): PropertiesFileName is set to: ava.properties
-INFO  2016-06-03 21:27:10,656 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file './res/ava.properties' loaded.
-INFO  2016-06-03 21:27:10,657 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(280): Validating ava.properties
-INFO  2016-06-03 21:27:10,658 [main] org.ava.Main:setLogConfiguration(173): Ava log level set to DEBUG
-DEBUG 2016-06-03 21:27:10,833 [main] org.ava.pluginengine.PluginManager:<init>(49): Created PluginManager.
-DEBUG 2016-06-03 21:27:10,834 [main] org.ava.pluginengine.PluginManager:initialize(53): Initializing PluginManager.
-DEBUG 2016-06-03 21:27:10,834 [main] org.ava.pluginengine.PluginManager:loadPluginsFromLastSession(145): Load plugins that had activation status 'ACTIVATED' last session.
-DEBUG 2016-06-03 21:27:10,837 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 21:27:10,837 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
-INFO  2016-06-03 21:27:10,837 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
-DEBUG 2016-06-03 21:27:10,837 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
-INFO  2016-06-03 21:27:10,838 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
-DEBUG 2016-06-03 21:27:10,838 [main] org.ava.pluginengine.PluginManager:discoverPlugins(164): Search plugin directory './plugins/' for plugins.
-DEBUG 2016-06-03 21:27:10,849 [main] org.ava.pluginengine.PluginManager:discoverPlugins(175): 4 Plugins found.
-DEBUG 2016-06-03 21:27:10,849 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 0
-DEBUG 2016-06-03 21:27:10,850 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 21:27:10,850 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\cmusphinx\
-INFO  2016-06-03 21:27:10,850 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-cmu-0.1.properties
-DEBUG 2016-06-03 21:27:10,850 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\cmusphinx\ava-cmu-0.1.properties
-INFO  2016-06-03 21:27:10,850 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\cmusphinx\ava-cmu-0.1.properties' loaded.
-DEBUG 2016-06-03 21:27:10,851 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@7a187f14):
+INFO  2016-06-05 22:34:34,763 [main] org.ava.Main:main(36): Ava started
+INFO  2016-06-05 22:34:34,764 [main] org.ava.Main:main(37): Version 1.0
+INFO  2016-06-05 22:34:34,766 [main] org.ava.util.PropertiesFileLoader:<init>(65): PropertiesFilePath is set to: ./res/
+INFO  2016-06-05 22:34:34,766 [main] org.ava.util.PropertiesFileLoader:<init>(66): PropertiesFileName is set to: ava.properties
+INFO  2016-06-05 22:34:34,766 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file './res/ava.properties' loaded.
+INFO  2016-06-05 22:34:34,766 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(280): Validating ava.properties
+INFO  2016-06-05 22:34:34,768 [main] org.ava.Main:setLogConfiguration(173): Ava log level set to DEBUG
+DEBUG 2016-06-05 22:34:34,948 [main] org.ava.pluginengine.PluginManager:<init>(49): Created PluginManager.
+DEBUG 2016-06-05 22:34:34,949 [main] org.ava.pluginengine.PluginManager:initialize(53): Initializing PluginManager.
+DEBUG 2016-06-05 22:34:34,949 [main] org.ava.pluginengine.PluginManager:loadPluginsFromLastSession(145): Load plugins that had activation status 'ACTIVATED' last session.
+DEBUG 2016-06-05 22:34:34,951 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:34,952 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
+INFO  2016-06-05 22:34:34,952 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
+DEBUG 2016-06-05 22:34:34,952 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
+INFO  2016-06-05 22:34:34,953 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
+DEBUG 2016-06-05 22:34:34,953 [main] org.ava.pluginengine.PluginManager:loadPluginsFromLastSession(156): Plugin from last session found: .\plugins\spotify\ava-spotify-0.1.jar
+DEBUG 2016-06-05 22:34:34,953 [main] org.ava.pluginengine.PluginManager:discoverPlugins(164): Search plugin directory './plugins/' for plugins.
+DEBUG 2016-06-05 22:34:34,966 [main] org.ava.pluginengine.PluginManager:discoverPlugins(175): 5 Plugins found.
+DEBUG 2016-06-05 22:34:34,966 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 0
+DEBUG 2016-06-05 22:34:34,966 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:34,966 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\cmusphinx\
+INFO  2016-06-05 22:34:34,966 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-cmu-0.1.properties
+DEBUG 2016-06-05 22:34:34,966 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\cmusphinx\ava-cmu-0.1.properties
+INFO  2016-06-05 22:34:34,967 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\cmusphinx\ava-cmu-0.1.properties' loaded.
+DEBUG 2016-06-05 22:34:34,967 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@7a187f14):
 	id = 0
 	name = CMU SPhinx4 ASR
 	version = 0.1
 	fqnPluginClass = com.stt.STTPluginImplementation
-DEBUG 2016-06-03 21:27:10,852 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'CMU SPhinx4 ASR' created, with properties org.ava.pluginengine.PluginProperties@7a187f14. Instance: org.ava.pluginengine.PluginWrapper@6f195bc3
-DEBUG 2016-06-03 21:27:10,852 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'CMU SPhinx4 ASR' (ID: 0) discovered.
-DEBUG 2016-06-03 21:27:10,852 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 1
-DEBUG 2016-06-03 21:27:10,853 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 21:27:10,853 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\freetts\
-INFO  2016-06-03 21:27:10,853 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-freetts-0.1.properties
-DEBUG 2016-06-03 21:27:10,853 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\freetts\ava-freetts-0.1.properties
-INFO  2016-06-03 21:27:10,853 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\freetts\ava-freetts-0.1.properties' loaded.
-DEBUG 2016-06-03 21:27:10,853 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@51e2adc7):
+DEBUG 2016-06-05 22:34:34,969 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'CMU SPhinx4 ASR' created, with properties org.ava.pluginengine.PluginProperties@7a187f14. Instance: org.ava.pluginengine.PluginWrapper@6f195bc3
+DEBUG 2016-06-05 22:34:34,969 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'CMU SPhinx4 ASR' (ID: 0) discovered.
+DEBUG 2016-06-05 22:34:34,969 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 1
+DEBUG 2016-06-05 22:34:34,969 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:34,969 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\freetts\
+INFO  2016-06-05 22:34:34,969 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-freetts-0.1.properties
+DEBUG 2016-06-05 22:34:34,969 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\freetts\ava-freetts-0.1.properties
+INFO  2016-06-05 22:34:34,970 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\freetts\ava-freetts-0.1.properties' loaded.
+DEBUG 2016-06-05 22:34:34,970 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@51e2adc7):
 	id = 1
 	name = FreeTTS
 	version = 0.1
 	fqnPluginClass = org.ava.freetts.FreeTTSPlugin
-DEBUG 2016-06-03 21:27:10,853 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'FreeTTS' created, with properties org.ava.pluginengine.PluginProperties@51e2adc7. Instance: org.ava.pluginengine.PluginWrapper@1a8a8f7c
-DEBUG 2016-06-03 21:27:10,853 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'FreeTTS' (ID: 1) discovered.
-DEBUG 2016-06-03 21:27:10,854 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 2
-DEBUG 2016-06-03 21:27:10,854 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 21:27:10,854 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\spotify\
-INFO  2016-06-03 21:27:10,854 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-spotify-0.1.properties
-DEBUG 2016-06-03 21:27:10,854 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\spotify\ava-spotify-0.1.properties
-INFO  2016-06-03 21:27:10,854 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\spotify\ava-spotify-0.1.properties' loaded.
-DEBUG 2016-06-03 21:27:10,854 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@2353b3e6):
+DEBUG 2016-06-05 22:34:34,970 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'FreeTTS' created, with properties org.ava.pluginengine.PluginProperties@51e2adc7. Instance: org.ava.pluginengine.PluginWrapper@1a8a8f7c
+DEBUG 2016-06-05 22:34:34,970 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'FreeTTS' (ID: 1) discovered.
+DEBUG 2016-06-05 22:34:34,970 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 2
+DEBUG 2016-06-05 22:34:34,970 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:34,970 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\marytts\
+INFO  2016-06-05 22:34:34,970 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-marytts-0.1.properties
+DEBUG 2016-06-05 22:34:34,971 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\marytts\ava-marytts-0.1.properties
+INFO  2016-06-05 22:34:34,971 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\marytts\ava-marytts-0.1.properties' loaded.
+DEBUG 2016-06-05 22:34:34,971 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@2353b3e6):
 	id = 2
+	name = MaryTTS
+	version = 0.1
+	fqnPluginClass = org.ava.marytts.MaryTTSPlugin
+DEBUG 2016-06-05 22:34:34,971 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'MaryTTS' created, with properties org.ava.pluginengine.PluginProperties@2353b3e6. Instance: org.ava.pluginengine.PluginWrapper@631330c
+DEBUG 2016-06-05 22:34:34,971 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'MaryTTS' (ID: 2) discovered.
+DEBUG 2016-06-05 22:34:34,971 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 3
+DEBUG 2016-06-05 22:34:34,971 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:34,971 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\spotify\
+INFO  2016-06-05 22:34:34,971 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-spotify-0.1.properties
+DEBUG 2016-06-05 22:34:34,972 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\spotify\ava-spotify-0.1.properties
+INFO  2016-06-05 22:34:34,972 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\spotify\ava-spotify-0.1.properties' loaded.
+DEBUG 2016-06-05 22:34:34,972 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@42f93a98):
+	id = 3
 	name = Spotify
 	version = 0.1
 	fqnPluginClass = org.ava.spotify.SpotifyPlugin
-DEBUG 2016-06-03 21:27:10,854 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'Spotify' created, with properties org.ava.pluginengine.PluginProperties@2353b3e6. Instance: org.ava.pluginengine.PluginWrapper@631330c
-DEBUG 2016-06-03 21:27:10,855 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'Spotify' (ID: 2) discovered.
-DEBUG 2016-06-03 21:27:10,855 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 3
-DEBUG 2016-06-03 21:27:10,855 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 21:27:10,855 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\wolframalpha\
-INFO  2016-06-03 21:27:10,855 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-wolframalpha-0.1.properties
-DEBUG 2016-06-03 21:27:10,855 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\wolframalpha\ava-wolframalpha-0.1.properties
-INFO  2016-06-03 21:27:10,855 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\wolframalpha\ava-wolframalpha-0.1.properties' loaded.
-DEBUG 2016-06-03 21:27:10,855 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@42f93a98):
-	id = 3
+DEBUG 2016-06-05 22:34:34,972 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'Spotify' created, with properties org.ava.pluginengine.PluginProperties@42f93a98. Instance: org.ava.pluginengine.PluginWrapper@c46bcd4
+DEBUG 2016-06-05 22:34:34,972 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'Spotify' (ID: 3) discovered.
+DEBUG 2016-06-05 22:34:34,972 [main] org.ava.pluginengine.PluginManager:generateIntegerID(233): Generated plugin id: 4
+DEBUG 2016-06-05 22:34:34,972 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:34,972 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\plugins\wolframalpha\
+INFO  2016-06-05 22:34:34,972 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava-wolframalpha-0.1.properties
+DEBUG 2016-06-05 22:34:34,973 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\plugins\wolframalpha\ava-wolframalpha-0.1.properties
+INFO  2016-06-05 22:34:34,973 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\plugins\wolframalpha\ava-wolframalpha-0.1.properties' loaded.
+DEBUG 2016-06-05 22:34:34,973 [main] org.ava.pluginengine.PluginProperties:<init>(40): Created PluginProperties instance (org.ava.pluginengine.PluginProperties@3234e239):
+	id = 4
 	name = Wolfram Alpha
 	version = 0.1
 	fqnPluginClass = com.ava.PluginEntry
-DEBUG 2016-06-03 21:27:10,855 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'Wolfram Alpha' created, with properties org.ava.pluginengine.PluginProperties@42f93a98. Instance: org.ava.pluginengine.PluginWrapper@c46bcd4
-DEBUG 2016-06-03 21:27:10,856 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'Wolfram Alpha' (ID: 3) discovered.
-DEBUG 2016-06-03 21:27:10,856 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(412): Clean ava configuration file.
-DEBUG 2016-06-03 21:27:10,856 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 21:27:10,856 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
-INFO  2016-06-03 21:27:10,856 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
-DEBUG 2016-06-03 21:27:10,856 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
-INFO  2016-06-03 21:27:10,856 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
-DEBUG 2016-06-03 21:27:10,856 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
-DEBUG 2016-06-03 21:27:10,862 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(433): Finished cleaning ava configuration file.
-DEBUG 2016-06-03 21:27:10,863 [main] org.ava.pluginengine.PluginManager:initialize(58): PluginManager initialized.
-DEBUG 2016-06-03 21:27:10,863 [main] org.ava.matching.DefaultMatchingEngine:<init>(100): Matching engine created [treshold = 0.9].
-DEBUG 2016-06-03 21:27:10,864 [main] org.ava.eventhandling.STTEventBus:<init>(38): STTEventBus created.
-DEBUG 2016-06-03 21:27:10,864 [main] org.ava.eventhandling.UIEventBus:<init>(47): UIEventBus created.
-DEBUG 2016-06-03 21:27:10,865 [main] org.ava.eventhandling.TTSEventBus:<init>(24): TTSEventBus created.
-DEBUG 2016-06-03 21:27:10,865 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRecognizedListener(59): Add UtteranceRecognizedListener. Listener: org.ava.AvaControl$1@1a1d6a08
-DEBUG 2016-06-03 21:27:10,865 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRecognizedListener(61): Adding UtteranceRecognizedListener: true
-DEBUG 2016-06-03 21:27:10,865 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRequestedListener(100): Add UtteranceRequestedListener. Listener: org.ava.AvaControl$2@37d31475
-DEBUG 2016-06-03 21:27:10,866 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRequestedListener(102): Adding UtteranceRequestedListener: true
-DEBUG 2016-06-03 21:27:10,866 [main] org.ava.eventhandling.UIEventBus:registerCommandEnteredListener(98): Add CommandEnteredListener. Listener: org.ava.AvaControl$3@27808f31
-DEBUG 2016-06-03 21:27:10,866 [main] org.ava.eventhandling.UIEventBus:registerCommandEnteredListener(100): Adding CommandEnteredListener: true
-DEBUG 2016-06-03 21:27:10,866 [main] org.ava.eventhandling.UIEventBus:registerPluginActivationStateChangedListener(85): Add PluginActivationStateChangedListener. Listener: org.ava.AvaControl$4@436e852b
-DEBUG 2016-06-03 21:27:10,866 [main] org.ava.eventhandling.UIEventBus:registerPluginActivationStateChangedListener(87): Adding PluginActivationStateChangedListener: true
-DEBUG 2016-06-03 21:27:10,867 [main] org.ava.eventhandling.UIEventBus:registerShutdownTriggeredListener(72): Add ShutdownTriggeredListener. Listener: org.ava.AvaControl$5@32d2fa64
-DEBUG 2016-06-03 21:27:10,867 [main] org.ava.eventhandling.UIEventBus:registerShutdownTriggeredListener(74): Adding ShutdownTriggeredListener: true
-DEBUG 2016-06-03 21:27:10,867 [main] org.ava.eventhandling.TTSEventBus:registerSpeakListener(43): Add SpeakListener. Listener: org.ava.AvaControl$6@1d8d30f7
-DEBUG 2016-06-03 21:27:10,867 [main] org.ava.eventhandling.TTSEventBus:registerSpeakListener(45): Adding SpeakListener: true
-DEBUG 2016-06-03 21:27:18,038 [main] org.ava.CUI:<init>(51): Creating instance of class CUI
-DEBUG 2016-06-03 21:27:18,038 [main] org.ava.CUI:<init>(55): Building the menue string to display the menu.
-DEBUG 2016-06-03 21:27:18,039 [main] org.ava.CUI:<init>(74): Building the help string. 
-DEBUG 2016-06-03 21:27:18,039 [main] org.ava.CUI:<init>(91): Open a InputStreamReader(System.in)
-DEBUG 2016-06-03 21:27:18,039 [main] org.ava.CUI:<init>(93): Open a BufferedReader
-DEBUG 2016-06-03 21:27:18,039 [main] org.ava.CUI:startConsoleControl(104): Starting the console user interface.
-INFO  2016-06-03 21:27:18,039 [main] org.ava.CUI:startConsoleControl(109): Console User Interface is activ. All log output will only be written to the log file.
-DEBUG 2016-06-03 21:27:18,040 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
-INFO  2016-06-03 21:27:20,494 [main] org.ava.CUI:getCommandLine(173): Read '-l' from console.
-DEBUG 2016-06-03 21:27:20,494 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter -l
-DEBUG 2016-06-03 21:27:20,494 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
-INFO  2016-06-03 21:27:23,037 [main] org.ava.CUI:getCommandLine(173): Read '-a 0' from console.
-DEBUG 2016-06-03 21:27:23,037 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter -a 0
-DEBUG 2016-06-03 21:27:23,038 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(35): PluginActivationStateChangedEvent created. PluginID: 0, new state: ACTIVATED
-DEBUG 2016-06-03 21:27:23,038 [main] org.ava.eventhandling.UIEventBus:firePluginActiavtionStateChangedEvent(174): Fire ActivationStateChangedEvent. Event: org.ava.eventhandling.PluginActivationStateChangedEvent@2c039ac6, Listener: org.ava.AvaControl$4@436e852b
-DEBUG 2016-06-03 21:27:23,038 [main] org.ava.pluginengine.PluginManager:activatePlugin(347): PluginActivationState of plugin '0' changed to 'ACTIVATED'.
-DEBUG 2016-06-03 21:27:23,038 [main] org.ava.pluginengine.PluginManager:startPlugin(91): Trying to start plugin: 'CMU SPhinx4 ASR' (ID: 0)
-DEBUG 2016-06-03 21:27:23,044 [main] org.ava.pluginengine.PluginWrapper:getPluginInstance(97): Instance for plugin 'CMU SPhinx4 ASR' created.
-INFO  2016-06-03 21:27:23,044 [main] com.stt.STTPluginImplementation:start(55): Starting the speech recognition plugin.
-DEBUG 2016-06-03 21:27:23,045 [main] com.stt.STTPluginImplementation:start(57): Loading the properties file for different needed data: ./res/sttPlugin.properties
-DEBUG 2016-06-03 21:27:23,045 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 21:27:23,045 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: G:\Programmieren\Git Repos\Studienarbeit\plugin-based-speech-recognition\code\workspace\AvaCore\.\plugins\cmusphinx\res\
-INFO  2016-06-03 21:27:23,045 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: sttPlugin.properties
-DEBUG 2016-06-03 21:27:23,045 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: G:\Programmieren\Git Repos\Studienarbeit\plugin-based-speech-recognition\code\workspace\AvaCore\.\plugins\cmusphinx\res\sttPlugin.properties
-INFO  2016-06-03 21:27:23,046 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file 'G:\Programmieren\Git Repos\Studienarbeit\plugin-based-speech-recognition\code\workspace\AvaCore\.\plugins\cmusphinx\res\sttPlugin.properties' loaded.
-INFO  2016-06-03 21:27:23,046 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(280): Validating sttPlugin.properties
-DEBUG 2016-06-03 21:27:23,046 [main] org.ava.util.PropertiesFileLoader:isPropertiesFileValid(289): Validate property with key name. -> value is 'null'.
-DEBUG 2016-06-03 21:27:23,066 [main] com.stt.sphinx.CMULogConfigurator:setCMULogger(28): CMU Sphinx logger was set in CMULogConfigurator.
-INFO  2016-06-03 21:27:23,066 [main] com.stt.sphinx.CMULogConfigurator:setCMULogLevel(45): STTPlugin internal CMU SPhinx log level set to FINEST
-FATAL 2016-06-03 21:27:35,019 [main] com.stt.sphinx.STTWrapper:init(97): Error while initialize the CMU Speech Recognizer class (LiveSpeechRecognizer)
-DEBUG 2016-06-03 21:27:35,019 [main] com.stt.sphinx.STTWrapper:init(98): catching
-edu.cmu.sphinx.util.props.PropertyException: java.net.UnknownHostException: .
-	at edu.cmu.sphinx.frontend.AutoCepstrum.newProperties(AutoCepstrum.java:120) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getOwner(PropertySheet.java:518) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.ConfigurationManager.lookup(ConfigurationManager.java:163) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getComponentList(PropertySheet.java:432) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.frontend.FrontEnd.newProperties(FrontEnd.java:160) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getOwner(PropertySheet.java:518) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getComponent(PropertySheet.java:296) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.decoder.scorer.SimpleAcousticScorer.newProperties(SimpleAcousticScorer.java:47) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getOwner(PropertySheet.java:518) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getComponent(PropertySheet.java:296) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.decoder.search.WordPruningBreadthFirstSearchManager.newProperties(WordPruningBreadthFirstSearchManager.java:213) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.decoder.search.WordPruningBreadthFirstLookaheadSearchManager.newProperties(WordPruningBreadthFirstLookaheadSearchManager.java:156) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getOwner(PropertySheet.java:518) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getComponent(PropertySheet.java:296) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.decoder.AbstractDecoder.newProperties(AbstractDecoder.java:81) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.decoder.Decoder.newProperties(Decoder.java:36) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getOwner(PropertySheet.java:518) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getComponent(PropertySheet.java:296) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.recognizer.Recognizer.newProperties(Recognizer.java:86) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.PropertySheet.getOwner(PropertySheet.java:518) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.util.props.ConfigurationManager.lookup(ConfigurationManager.java:163) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.api.Context.<init>(Context.java:73) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.api.Context.<init>(Context.java:45) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at edu.cmu.sphinx.api.AbstractSpeechRecognizer.<init>(AbstractSpeechRecognizer.java:44) ~[sphinx4-core-5prealpha-20160218.203526-7.jar:?]
-	at com.stt.sphinx.ModifiedLiveSpeechRecognizer.<init>(ModifiedLiveSpeechRecognizer.java:25) ~[ava-cmu-0.1.jar:?]
-	at com.stt.sphinx.STTWrapper.init(STTWrapper.java:94) [ava-cmu-0.1.jar:?]
-	at com.stt.STTPluginImplementation.start(STTPluginImplementation.java:80) [ava-cmu-0.1.jar:?]
-	at org.ava.pluginengine.PluginManager.startPlugin(PluginManager.java:95) [bin/:?]
-	at org.ava.pluginengine.PluginManager.activatePlugin(PluginManager.java:348) [bin/:?]
-	at org.ava.AvaControl$4.changeActivationStateOfPlugin(AvaControl.java:178) [bin/:?]
-	at org.ava.eventhandling.UIEventBus.firePluginActiavtionStateChangedEvent(UIEventBus.java:175) [bin/:?]
-	at org.ava.CUI.handleCommand(CUI.java:194) [bin/:?]
-	at org.ava.CUI.startConsoleControl(CUI.java:121) [bin/:?]
-	at org.ava.AvaControl.init(AvaControl.java:118) [bin/:?]
-	at org.ava.AvaControl.<init>(AvaControl.java:73) [bin/:?]
-	at org.ava.Main.main(Main.java:76) [bin/:?]
-Caused by: java.net.UnknownHostException: .
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_91]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_91]
-	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_91]
-	at java.net.Socket.connect(Socket.java:538) ~[?:1.8.0_91]
-	at sun.net.ftp.impl.FtpClient.doConnect(FtpClient.java:957) ~[?:1.8.0_91]
-	at sun.net.ftp.impl.FtpClient.tryConnect(FtpClient.java:917) ~[?:1.8.0_91]
-	at sun.net.ftp.impl.FtpClient.connect(FtpClient.java:1012) ~[?:1.8.0_91]
-	at sun.net.ftp.impl.FtpClient.connect(FtpClient.java:998) ~[?:1.8.0_91]
-	at sun.net.www.protocol.ftp.FtpURLConnection.connect(FtpURLConnection.java:294) ~[?:1.8.0_91]
-	at sun.net.www.protocol.ftp.FtpURLConnection.getInputStream(FtpURLConnection.java:393) ~[?:1.8.0_91]
-	at java.net.URL.openStream(URL.java:1045) ~[?:1.8.0_91]
-	at edu.cmu.sphinx.linguist.acoustic.tiedstate.Sphinx3Loader.getDataStream(Sphinx3Loader.java:233) ~[?:?]
-	at edu.cmu.sphinx.linguist.acoustic.tiedstate.Sphinx3Loader.readS3BinaryHeader(Sphinx3Loader.java:604) ~[?:?]
-	at edu.cmu.sphinx.linguist.acoustic.tiedstate.Sphinx3Loader.loadDensityFile(Sphinx3Loader.java:525) ~[?:?]
-	at edu.cmu.sphinx.linguist.acoustic.tiedstate.Sphinx3Loader.loadModelFiles(Sphinx3Loader.java:298) ~[?:?]
-	at edu.cmu.sphinx.linguist.acoustic.tiedstate.Sphinx3Loader.load(Sphinx3Loader.java:252) ~[?:?]
-	at edu.cmu.sphinx.frontend.AutoCepstrum.newProperties(AutoCepstrum.java:118) ~[?:?]
-	... 35 more
-DEBUG 2016-06-03 21:27:35,032 [main] org.ava.pluginengine.PluginManager:startPlugin(98): Successfully started plugin 'CMU SPhinx4 ASR' (ID: 0)
-DEBUG 2016-06-03 21:27:35,032 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
-INFO  2016-06-03 21:27:35,032 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
-INFO  2016-06-03 21:27:35,033 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
-DEBUG 2016-06-03 21:27:35,033 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
-INFO  2016-06-03 21:27:35,033 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
-DEBUG 2016-06-03 21:27:35,033 [main] org.ava.util.PropertiesFileLoader:setProperty(119): setProperty is called with arguments key 'plugins.lastsessionloaded.0' and value '.\plugins\cmusphinx\ava-cmu-0.1.jar'.
-INFO  2016-06-03 21:27:35,034 [main] org.ava.util.PropertiesFileLoader:setProperty(132): Key with value 'plugins.lastsessionloaded.0 : .\plugins\cmusphinx\ava-cmu-0.1.jar' added/modified to the Properties file ava.properties
-DEBUG 2016-06-03 21:27:35,034 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
-INFO  2016-06-03 21:27:35,035 [main] org.ava.util.PropertiesFileLoader:setProperty(136): The updated properties were written to the properties file .\res\ava.properties
-DEBUG 2016-06-03 21:27:35,035 [main] org.ava.pluginengine.PluginManager:writeLoadedPluginToPropertyFile(442): Wrote activated plugin to ava configuration file:
-	key: plugins.lastsessionloaded.0
-	value: .\plugins\cmusphinx\ava-cmu-0.1.jar
-DEBUG 2016-06-03 21:27:35,035 [main] org.ava.AvaControl:changeActivationStateOfPlugin(183): Current STT plugin changed to plugin '0'.
-DEBUG 2016-06-03 21:27:35,035 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-05 22:34:34,973 [main] org.ava.pluginengine.PluginWrapper:<init>(65): PluginWrapper for plugin 'Wolfram Alpha' created, with properties org.ava.pluginengine.PluginProperties@3234e239. Instance: org.ava.pluginengine.PluginWrapper@3d921e20
+DEBUG 2016-06-05 22:34:34,973 [main] org.ava.pluginengine.PluginManager:discoverPlugins(205): Plugin 'Wolfram Alpha' (ID: 4) discovered.
+DEBUG 2016-06-05 22:34:34,973 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(412): Clean ava configuration file.
+DEBUG 2016-06-05 22:34:34,973 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:34,974 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
+INFO  2016-06-05 22:34:34,974 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
+DEBUG 2016-06-05 22:34:34,974 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
+INFO  2016-06-05 22:34:34,974 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
+DEBUG 2016-06-05 22:34:34,974 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(422): Removed key 'plugins.lastsessionloaded.3'.
+DEBUG 2016-06-05 22:34:34,974 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:34,974 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
+INFO  2016-06-05 22:34:34,974 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
+DEBUG 2016-06-05 22:34:34,975 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
+INFO  2016-06-05 22:34:34,975 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
+DEBUG 2016-06-05 22:34:34,975 [main] org.ava.util.PropertiesFileLoader:setProperty(119): setProperty is called with arguments key 'plugins.lastsessionloaded.3' and value '.\plugins\spotify\ava-spotify-0.1.jar'.
+INFO  2016-06-05 22:34:34,975 [main] org.ava.util.PropertiesFileLoader:setProperty(132): Key with value 'plugins.lastsessionloaded.3 : .\plugins\spotify\ava-spotify-0.1.jar' added/modified to the Properties file ava.properties
+DEBUG 2016-06-05 22:34:34,975 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
+INFO  2016-06-05 22:34:34,981 [main] org.ava.util.PropertiesFileLoader:setProperty(136): The updated properties were written to the properties file .\res\ava.properties
+DEBUG 2016-06-05 22:34:34,981 [main] org.ava.pluginengine.PluginManager:writeLoadedPluginToPropertyFile(442): Wrote activated plugin to ava configuration file:
+	key: plugins.lastsessionloaded.3
+	value: .\plugins\spotify\ava-spotify-0.1.jar
+DEBUG 2016-06-05 22:34:34,981 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
+DEBUG 2016-06-05 22:34:34,982 [main] org.ava.pluginengine.PluginManager:cleanPropertyFile(433): Finished cleaning ava configuration file.
+DEBUG 2016-06-05 22:34:34,982 [main] org.ava.pluginengine.PluginManager:startPlugin(91): Trying to start plugin: 'Spotify' (ID: 3)
+DEBUG 2016-06-05 22:34:34,985 [main] org.ava.pluginengine.PluginWrapper:getPluginInstance(101): Instance for plugin 'Spotify' created.
+DEBUG 2016-06-05 22:34:34,986 [main] org.ava.spotify.SpotifyController:init(56): Initialize Spotify plugin.
+DEBUG 2016-06-05 22:34:35,023 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:35,023 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: G:\Programmieren\Git Repos\Studienarbeit\plugin-based-speech-recognition\code\workspace\AvaCore\.\plugins\spotify\res\
+INFO  2016-06-05 22:34:35,023 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: spotify-config.properties
+DEBUG 2016-06-05 22:34:35,023 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: G:\Programmieren\Git Repos\Studienarbeit\plugin-based-speech-recognition\code\workspace\AvaCore\.\plugins\spotify\res\spotify-config.properties
+INFO  2016-06-05 22:34:35,024 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file 'G:\Programmieren\Git Repos\Studienarbeit\plugin-based-speech-recognition\code\workspace\AvaCore\.\plugins\spotify\res\spotify-config.properties' loaded.
+DEBUG 2016-06-05 22:34:35,024 [main] org.ava.spotify.SpotifyConfiguration:setMarket(37): Spotify market set to: de
+INFO  2016-06-05 22:34:35,025 [main] org.ava.spotify.SpotifyPlugin:start(42): Spotify plugin started.
+DEBUG 2016-06-05 22:34:35,025 [main] org.ava.pluginengine.PluginManager:startPlugin(98): Successfully started plugin 'Spotify' (ID: 3)
+DEBUG 2016-06-05 22:34:35,026 [main] org.ava.pluginengine.PluginManager:initialize(58): PluginManager initialized.
+DEBUG 2016-06-05 22:34:35,026 [main] org.ava.matching.DefaultMatchingEngine:<init>(100): Matching engine created [treshold = 0.9].
+DEBUG 2016-06-05 22:34:35,026 [main] org.ava.matching.DefaultMatchingEngine:addApplicationCommands(111): Adding Commands of plugin '3' to matching engine
+DEBUG 2016-06-05 22:34:35,027 [main] org.ava.matching.DefaultMatchingEngine:<init>(46): Command structure created [fixed part = 'search album', length fixed part = 2, has variable part = true]
+DEBUG 2016-06-05 22:34:35,028 [main] org.ava.matching.DefaultMatchingEngine:<init>(46): Command structure created [fixed part = 'search artist', length fixed part = 2, has variable part = true]
+DEBUG 2016-06-05 22:34:35,028 [main] org.ava.matching.DefaultMatchingEngine:<init>(46): Command structure created [fixed part = 'search track', length fixed part = 2, has variable part = true]
+DEBUG 2016-06-05 22:34:35,028 [main] org.ava.matching.DefaultMatchingEngine:addApplicationCommands(121): Finished adding commands of plugin '3' to matching engine
+DEBUG 2016-06-05 22:34:35,028 [main] org.ava.eventhandling.STTEventBus:<init>(38): STTEventBus created.
+DEBUG 2016-06-05 22:34:35,029 [main] org.ava.eventhandling.UIEventBus:<init>(47): UIEventBus created.
+DEBUG 2016-06-05 22:34:35,029 [main] org.ava.eventhandling.TTSEventBus:<init>(24): TTSEventBus created.
+DEBUG 2016-06-05 22:34:35,030 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRecognizedListener(59): Add UtteranceRecognizedListener. Listener: org.ava.AvaControl$1@6366ebe0
+DEBUG 2016-06-05 22:34:35,030 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRecognizedListener(61): Adding UtteranceRecognizedListener: true
+DEBUG 2016-06-05 22:34:35,030 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRequestedListener(100): Add UtteranceRequestedListener. Listener: org.ava.AvaControl$2@44f75083
+DEBUG 2016-06-05 22:34:35,030 [main] org.ava.eventhandling.STTEventBus:registerUtteranceRequestedListener(102): Adding UtteranceRequestedListener: true
+DEBUG 2016-06-05 22:34:35,030 [main] org.ava.eventhandling.UIEventBus:registerCommandEnteredListener(98): Add CommandEnteredListener. Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:34:35,031 [main] org.ava.eventhandling.UIEventBus:registerCommandEnteredListener(100): Adding CommandEnteredListener: true
+DEBUG 2016-06-05 22:34:35,031 [main] org.ava.eventhandling.UIEventBus:registerPluginActivationStateChangedListener(85): Add PluginActivationStateChangedListener. Listener: org.ava.AvaControl$4@43d7741f
+DEBUG 2016-06-05 22:34:35,031 [main] org.ava.eventhandling.UIEventBus:registerPluginActivationStateChangedListener(87): Adding PluginActivationStateChangedListener: true
+DEBUG 2016-06-05 22:34:35,031 [main] org.ava.eventhandling.UIEventBus:registerShutdownTriggeredListener(72): Add ShutdownTriggeredListener. Listener: org.ava.AvaControl$5@17baae6e
+DEBUG 2016-06-05 22:34:35,032 [main] org.ava.eventhandling.UIEventBus:registerShutdownTriggeredListener(74): Adding ShutdownTriggeredListener: true
+DEBUG 2016-06-05 22:34:35,032 [main] org.ava.eventhandling.TTSEventBus:registerSpeakListener(43): Add SpeakListener. Listener: org.ava.AvaControl$6@69379752
+DEBUG 2016-06-05 22:34:35,032 [main] org.ava.eventhandling.TTSEventBus:registerSpeakListener(45): Adding SpeakListener: true
+DEBUG 2016-06-05 22:34:44,114 [main] org.ava.CUI:<init>(51): Creating instance of class CUI
+DEBUG 2016-06-05 22:34:44,114 [main] org.ava.CUI:<init>(55): Building the menue string to display the menu.
+DEBUG 2016-06-05 22:34:44,114 [main] org.ava.CUI:<init>(74): Building the help string. 
+DEBUG 2016-06-05 22:34:44,114 [main] org.ava.CUI:<init>(91): Open a InputStreamReader(System.in)
+DEBUG 2016-06-05 22:34:44,114 [main] org.ava.CUI:<init>(93): Open a BufferedReader
+DEBUG 2016-06-05 22:34:44,114 [main] org.ava.CUI:startConsoleControl(104): Starting the console user interface.
+INFO  2016-06-05 22:34:44,114 [main] org.ava.CUI:startConsoleControl(109): Console User Interface is activ. All log output will only be written to the log file.
+DEBUG 2016-06-05 22:34:44,115 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+INFO  2016-06-05 22:34:45,136 [main] org.ava.CUI:getCommandLine(173): Read '-l' from console.
+DEBUG 2016-06-05 22:34:45,136 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter -l
+DEBUG 2016-06-05 22:34:45,137 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+INFO  2016-06-05 22:34:50,835 [main] org.ava.CUI:getCommandLine(173): Read '-a 2' from console.
+DEBUG 2016-06-05 22:34:50,835 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter -a 2
+DEBUG 2016-06-05 22:34:50,836 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(35): PluginActivationStateChangedEvent created. PluginID: 2, new state: ACTIVATED
+DEBUG 2016-06-05 22:34:50,836 [main] org.ava.eventhandling.UIEventBus:firePluginActiavtionStateChangedEvent(174): Fire ActivationStateChangedEvent. Event: org.ava.eventhandling.PluginActivationStateChangedEvent@48a242ce, Listener: org.ava.AvaControl$4@43d7741f
+DEBUG 2016-06-05 22:34:50,837 [main] org.ava.pluginengine.PluginManager:activatePlugin(347): PluginActivationState of plugin '2' changed to 'ACTIVATED'.
+DEBUG 2016-06-05 22:34:50,837 [main] org.ava.pluginengine.PluginManager:startPlugin(91): Trying to start plugin: 'MaryTTS' (ID: 2)
+DEBUG 2016-06-05 22:34:50,839 [main] org.ava.pluginengine.PluginWrapper:getPluginInstance(101): Instance for plugin 'MaryTTS' created.
+DEBUG 2016-06-05 22:34:52,269 [main] org.ava.marytts.MaryTTSController:init(67): MaryTTS instance triggered [voice = cmu-slt-hsmm].
+INFO  2016-06-05 22:34:52,270 [main] org.ava.marytts.MaryTTSPlugin:start(38): MaryTTS plugin started.
+DEBUG 2016-06-05 22:34:52,270 [main] org.ava.pluginengine.PluginManager:startPlugin(98): Successfully started plugin 'MaryTTS' (ID: 2)
+DEBUG 2016-06-05 22:34:52,270 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:34:52,270 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
+INFO  2016-06-05 22:34:52,270 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
+DEBUG 2016-06-05 22:34:52,270 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
+INFO  2016-06-05 22:34:52,270 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
+DEBUG 2016-06-05 22:34:52,270 [main] org.ava.util.PropertiesFileLoader:setProperty(119): setProperty is called with arguments key 'plugins.lastsessionloaded.2' and value '.\plugins\marytts\ava-marytts-0.1.jar'.
+INFO  2016-06-05 22:34:52,270 [main] org.ava.util.PropertiesFileLoader:setProperty(132): Key with value 'plugins.lastsessionloaded.2 : .\plugins\marytts\ava-marytts-0.1.jar' added/modified to the Properties file ava.properties
+DEBUG 2016-06-05 22:34:52,270 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
+INFO  2016-06-05 22:34:52,271 [main] org.ava.util.PropertiesFileLoader:setProperty(136): The updated properties were written to the properties file .\res\ava.properties
+DEBUG 2016-06-05 22:34:52,271 [main] org.ava.pluginengine.PluginManager:writeLoadedPluginToPropertyFile(442): Wrote activated plugin to ava configuration file:
+	key: plugins.lastsessionloaded.2
+	value: .\plugins\marytts\ava-marytts-0.1.jar
+DEBUG 2016-06-05 22:34:52,271 [main] org.ava.AvaControl:changeActivationStateOfPlugin(187): Current TTS plugin changed to plugin '2'.
+DEBUG 2016-06-05 22:34:52,272 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+INFO  2016-06-05 22:35:00,731 [main] org.ava.CUI:getCommandLine(173): Read 'Spotify : search track test' from console.
+DEBUG 2016-06-05 22:35:00,731 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter Spotify : search track test
+DEBUG 2016-06-05 22:35:00,731 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(29): CommandEnteredEvent created. Entered command: Spotify : search track test
+DEBUG 2016-06-05 22:35:00,732 [main] org.ava.eventhandling.UIEventBus:fireCommandEnteredEvent(187): Fire CommandEnteredEvent. Event: org.ava.eventhandling.CommandEnteredEvent@333dd51e, Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:35:00,732 [main] org.ava.AvaControl:executeEnteredCommand(151): Console command processing mode entered.
+DEBUG 2016-06-05 22:35:00,732 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Spotify'].
+DEBUG 2016-06-05 22:35:00,732 [main] org.ava.AvaControl:processUtterance(253): Ava has been activated. Try to match plugin. [utterance = 'Spotify']
+DEBUG 2016-06-05 22:35:00,732 [main] org.ava.AvaControl:matchAppPlugin(307): Find plugin match. Loaded app plugins count: 1
+DEBUG 2016-06-05 22:35:00,732 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Spotify', plugin = 'Spotify']
+DEBUG 2016-06-05 22:35:00,733 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Spotify' and 'Spotify' is 1.0.
+DEBUG 2016-06-05 22:35:00,734 [main] org.ava.AvaControl:matchAppPlugin(316): Plugin match found. [plugin = 'Spotify', likelihood = '1.0']
+DEBUG 2016-06-05 22:35:00,734 [main] org.ava.AvaControl:processUtterance(256): A plugin has been matched.
+DEBUG 2016-06-05 22:35:00,734 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'search track test'].
+DEBUG 2016-06-05 22:35:00,734 [main] org.ava.AvaControl:processUtterance(270): A plugin has been matched. Try to match a command of that plugin. [utterance = 'search track test']
+INFO  2016-06-05 22:35:00,734 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(147): Started matching of input to loaded commands.
+DEBUG 2016-06-05 22:35:00,734 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'search track' and 'search album' is 0.9074074625968933.
+DEBUG 2016-06-05 22:35:00,734 [main] org.ava.matching.CommandMatch:<init>(43): CommandMatch created [likelihood = 0.9074074625968933, command = search album *, variable part = 'test']
+DEBUG 2016-06-05 22:35:00,735 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'search track' and 'search artist' is 0.9234713912010193.
+DEBUG 2016-06-05 22:35:00,735 [main] org.ava.matching.CommandMatch:<init>(43): CommandMatch created [likelihood = 0.9234713912010193, command = search artist *, variable part = 'test']
+DEBUG 2016-06-05 22:35:00,735 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'search track' and 'search track' is 1.0.
+DEBUG 2016-06-05 22:35:00,735 [main] org.ava.matching.CommandMatch:<init>(43): CommandMatch created [likelihood = 1.0, command = search track *, variable part = 'test']
+INFO  2016-06-05 22:35:00,735 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(203): Input matched to command [command = 'search track *', similarity = 1.0', variable part = 'test'].
+DEBUG 2016-06-05 22:35:01,580 [main] org.ava.eventhandling.TTSEventBus:fireSspeakEvent(68): Fire SspeakEvent. Listener: org.ava.AvaControl$6@69379752
+DEBUG 2016-06-05 22:35:01,581 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:35:01,581 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+ERROR 2016-06-05 22:35:01,615 [Thread-7] org.ava.marytts.MaryTTSController:run(113): An error occured while synthesizing speech: cannot process
+DEBUG 2016-06-05 22:35:01,615 [Thread-7] org.ava.marytts.MaryTTSController:run(114): catching
+marytts.exceptions.SynthesisException: cannot process
+	at marytts.LocalMaryInterface.process(LocalMaryInterface.java:440) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.LocalMaryInterface.generateAudio(LocalMaryInterface.java:348) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at org.ava.marytts.MaryTTSController$1.run(MaryTTSController.java:106) [ava-marytts-0.1.jar:?]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_91]
+Caused by: java.lang.Exception: Module JPhonemiser: Problem processing the data.
+	at marytts.server.Request.processOneChunk(Request.java:549) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.server.Request.processOrLookupOneChunk(Request.java:385) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.server.Request.process(Request.java:327) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.LocalMaryInterface.process(LocalMaryInterface.java:438) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	... 3 more
+Caused by: java.lang.IllegalArgumentException: Allophone `-' could not be found in AllophoneSet `sampa' (Locale: en_US)
+	at marytts.modules.phonemiser.AllophoneSet.getAllophone(AllophoneSet.java:224) ~[marytts-client-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.modules.phonemiser.Syllabifier.correctStressSymbol(Syllabifier.java:297) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.modules.phonemiser.Syllabifier.syllabify(Syllabifier.java:252) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.modules.phonemiser.Syllabifier.syllabify(Syllabifier.java:52) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.modules.phonemiser.TrainedLTS.syllabify(TrainedLTS.java:166) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.modules.JPhonemiser.phonemise(JPhonemiser.java:225) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.modules.JPhonemiser.process(JPhonemiser.java:153) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.server.Request.processOneChunk(Request.java:547) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.server.Request.processOrLookupOneChunk(Request.java:385) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.server.Request.process(Request.java:327) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	at marytts.LocalMaryInterface.process(LocalMaryInterface.java:438) ~[marytts-runtime-5.1.2-jar-with-dependencies.jar:?]
+	... 3 more
+INFO  2016-06-05 22:35:36,717 [main] org.ava.CUI:getCommandLine(173): Read 'Wolfram Alpha : Who is the president of Germany?' from console.
+DEBUG 2016-06-05 22:35:36,717 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter Wolfram Alpha : Who is the president of Germany?
+DEBUG 2016-06-05 22:35:36,717 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(29): CommandEnteredEvent created. Entered command: Wolfram Alpha : Who is the president of Germany?
+DEBUG 2016-06-05 22:35:36,717 [main] org.ava.eventhandling.UIEventBus:fireCommandEnteredEvent(187): Fire CommandEnteredEvent. Event: org.ava.eventhandling.CommandEnteredEvent@51f49060, Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:35:36,717 [main] org.ava.AvaControl:executeEnteredCommand(151): Console command processing mode entered.
+DEBUG 2016-06-05 22:35:36,717 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha'].
+DEBUG 2016-06-05 22:35:36,717 [main] org.ava.AvaControl:processUtterance(253): Ava has been activated. Try to match plugin. [utterance = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:35:36,717 [main] org.ava.AvaControl:matchAppPlugin(307): Find plugin match. Loaded app plugins count: 1
+DEBUG 2016-06-05 22:35:36,717 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Spotify']
+DEBUG 2016-06-05 22:35:36,717 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Spotify' is 0.47985348105430603.
+DEBUG 2016-06-05 22:35:36,718 [main] org.ava.AvaControl:processUtterance(261): No plugin match found. Trigger reset of current processing state.
+DEBUG 2016-06-05 22:35:36,718 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:35:36,718 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:35:36,718 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-05 22:35:36,796 [Thread-9] org.ava.marytts.MaryTTSController:run(110): Started audio output [audio player = Thread[Thread-10,5,main]]
+INFO  2016-06-05 22:35:43,516 [main] org.ava.CUI:getCommandLine(173): Read '-a 4' from console.
+DEBUG 2016-06-05 22:35:43,516 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter -a 4
+DEBUG 2016-06-05 22:35:43,516 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(35): PluginActivationStateChangedEvent created. PluginID: 4, new state: ACTIVATED
+DEBUG 2016-06-05 22:35:43,516 [main] org.ava.eventhandling.UIEventBus:firePluginActiavtionStateChangedEvent(174): Fire ActivationStateChangedEvent. Event: org.ava.eventhandling.PluginActivationStateChangedEvent@514eedd8, Listener: org.ava.AvaControl$4@43d7741f
+DEBUG 2016-06-05 22:35:43,516 [main] org.ava.pluginengine.PluginManager:activatePlugin(347): PluginActivationState of plugin '4' changed to 'ACTIVATED'.
+DEBUG 2016-06-05 22:35:43,516 [main] org.ava.pluginengine.PluginManager:startPlugin(91): Trying to start plugin: 'Wolfram Alpha' (ID: 4)
+DEBUG 2016-06-05 22:35:43,564 [main] org.ava.pluginengine.PluginWrapper:getPluginInstance(101): Instance for plugin 'Wolfram Alpha' created.
+INFO  2016-06-05 22:35:43,564 [main] com.ava.PluginEntry:start(46): Plugin Wolfram Alpha Plugin starting.
+DEBUG 2016-06-05 22:35:43,565 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:35:43,565 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: G:\Programmieren\Git Repos\Studienarbeit\plugin-based-speech-recognition\code\workspace\AvaCore\.\plugins\wolframalpha\res\
+INFO  2016-06-05 22:35:43,565 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: wa.properties
+DEBUG 2016-06-05 22:35:43,566 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: G:\Programmieren\Git Repos\Studienarbeit\plugin-based-speech-recognition\code\workspace\AvaCore\.\plugins\wolframalpha\res\wa.properties
+INFO  2016-06-05 22:35:43,566 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file 'G:\Programmieren\Git Repos\Studienarbeit\plugin-based-speech-recognition\code\workspace\AvaCore\.\plugins\wolframalpha\res\wa.properties' loaded.
+DEBUG 2016-06-05 22:35:43,597 [main] com.ava.WAExecuter:<init>(50): Initialize WAExecuter class. Arguemnts: String appid : L2H6WP-4EAK9WP67E
+DEBUG 2016-06-05 22:35:43,720 [main] com.ava.WAExecuter:<init>(53): Wolfram Alpha engine initialized.
+DEBUG 2016-06-05 22:35:43,720 [main] com.ava.WAExecuter:<init>(73): WAExecuter initialized.
+DEBUG 2016-06-05 22:35:43,720 [main] com.ava.PluginEntry:initCommands(82): Initialize commands...
+DEBUG 2016-06-05 22:35:43,721 [main] com.ava.commands.QueryExecution:<init>(21): Command 'QueryExecution' initialized.
+DEBUG 2016-06-05 22:35:43,721 [main] com.ava.PluginEntry:initCommands(90): Commands initialied. 
+DEBUG 2016-06-05 22:35:43,721 [main] org.ava.pluginengine.PluginManager:startPlugin(98): Successfully started plugin 'Wolfram Alpha' (ID: 4)
+DEBUG 2016-06-05 22:35:43,721 [main] org.ava.util.PropertiesFileLoader:<init>(78): PropertiesFileLoader instance created.
+INFO  2016-06-05 22:35:43,721 [main] org.ava.util.PropertiesFileLoader:<init>(79): PropertiesFilePath is set to: .\res\
+INFO  2016-06-05 22:35:43,721 [main] org.ava.util.PropertiesFileLoader:<init>(80): PropertiesFileName is set to: ava.properties
+DEBUG 2016-06-05 22:35:43,721 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(199): Try to load the properties file: .\res\ava.properties
+INFO  2016-06-05 22:35:43,721 [main] org.ava.util.PropertiesFileLoader:readPropertiesFile(235): Properties file '.\res\ava.properties' loaded.
+DEBUG 2016-06-05 22:35:43,721 [main] org.ava.util.PropertiesFileLoader:setProperty(119): setProperty is called with arguments key 'plugins.lastsessionloaded.4' and value '.\plugins\wolframalpha\ava-wolframalpha-0.1.jar'.
+INFO  2016-06-05 22:35:43,721 [main] org.ava.util.PropertiesFileLoader:setProperty(132): Key with value 'plugins.lastsessionloaded.4 : .\plugins\wolframalpha\ava-wolframalpha-0.1.jar' added/modified to the Properties file ava.properties
+DEBUG 2016-06-05 22:35:43,721 [main] org.ava.util.PropertiesFileLoader:storePropertiesFile(257): Try storing properties file '.\res\ava.properties'.
+INFO  2016-06-05 22:35:43,722 [main] org.ava.util.PropertiesFileLoader:setProperty(136): The updated properties were written to the properties file .\res\ava.properties
+DEBUG 2016-06-05 22:35:43,722 [main] org.ava.pluginengine.PluginManager:writeLoadedPluginToPropertyFile(442): Wrote activated plugin to ava configuration file:
+	key: plugins.lastsessionloaded.4
+	value: .\plugins\wolframalpha\ava-wolframalpha-0.1.jar
+DEBUG 2016-06-05 22:35:43,722 [main] org.ava.matching.DefaultMatchingEngine:addApplicationCommands(111): Adding Commands of plugin '4' to matching engine
+DEBUG 2016-06-05 22:35:43,722 [main] org.ava.matching.DefaultMatchingEngine:<init>(46): Command structure created [fixed part = 'Wolfram Alpha', length fixed part = 2, has variable part = true]
+DEBUG 2016-06-05 22:35:43,722 [main] org.ava.matching.DefaultMatchingEngine:addApplicationCommands(121): Finished adding commands of plugin '4' to matching engine
+DEBUG 2016-06-05 22:35:43,723 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+INFO  2016-06-05 22:35:55,368 [main] org.ava.CUI:getCommandLine(173): Read 'Wolfram Alpha : Who is the president of Germany?' from console.
+DEBUG 2016-06-05 22:35:55,368 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter Wolfram Alpha : Who is the president of Germany?
+DEBUG 2016-06-05 22:35:55,368 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(29): CommandEnteredEvent created. Entered command: Wolfram Alpha : Who is the president of Germany?
+DEBUG 2016-06-05 22:35:55,368 [main] org.ava.eventhandling.UIEventBus:fireCommandEnteredEvent(187): Fire CommandEnteredEvent. Event: org.ava.eventhandling.CommandEnteredEvent@6c451c9c, Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:35:55,368 [main] org.ava.AvaControl:executeEnteredCommand(151): Console command processing mode entered.
+DEBUG 2016-06-05 22:35:55,368 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha'].
+DEBUG 2016-06-05 22:35:55,368 [main] org.ava.AvaControl:processUtterance(253): Ava has been activated. Try to match plugin. [utterance = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:35:55,368 [main] org.ava.AvaControl:matchAppPlugin(307): Find plugin match. Loaded app plugins count: 2
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Spotify']
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Spotify' is 0.47985348105430603.
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.AvaControl:matchAppPlugin(316): Plugin match found. [plugin = 'Wolfram Alpha', likelihood = '1.0']
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.AvaControl:processUtterance(256): A plugin has been matched.
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Who is the president of Germany?'].
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.AvaControl:processUtterance(270): A plugin has been matched. Try to match a command of that plugin. [utterance = 'Who is the president of Germany?']
+INFO  2016-06-05 22:35:55,369 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(147): Started matching of input to loaded commands.
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Who is' and 'Wolfram Alpha' is 0.5769230723381042.
+INFO  2016-06-05 22:35:55,369 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(201): No match found.
+DEBUG 2016-06-05 22:35:55,369 [main] org.ava.AvaControl:processUtterance(276): No command match found. Trigger reset of current processing state.
+DEBUG 2016-06-05 22:35:55,370 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:35:55,370 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:35:55,370 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-05 22:35:55,371 [Thread-13] org.ava.marytts.MaryTTSController:run(92): Aborted audio output [audio player = Thread[Thread-10,5,]]
+DEBUG 2016-06-05 22:35:55,512 [Thread-13] org.ava.marytts.MaryTTSController:run(110): Started audio output [audio player = Thread[Thread-14,5,main]]
+INFO  2016-06-05 22:36:15,207 [main] org.ava.CUI:getCommandLine(173): Read 'Wolfram Alpha : Wolfram Alpha Who is the president of Germany?' from console.
+DEBUG 2016-06-05 22:36:15,207 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter Wolfram Alpha : Wolfram Alpha Who is the president of Germany?
+DEBUG 2016-06-05 22:36:15,207 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(29): CommandEnteredEvent created. Entered command: Wolfram Alpha : Wolfram Alpha Who is the president of Germany?
+DEBUG 2016-06-05 22:36:15,207 [main] org.ava.eventhandling.UIEventBus:fireCommandEnteredEvent(187): Fire CommandEnteredEvent. Event: org.ava.eventhandling.CommandEnteredEvent@31c269fd, Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:36:15,207 [main] org.ava.AvaControl:executeEnteredCommand(151): Console command processing mode entered.
+DEBUG 2016-06-05 22:36:15,207 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha'].
+DEBUG 2016-06-05 22:36:15,207 [main] org.ava.AvaControl:processUtterance(253): Ava has been activated. Try to match plugin. [utterance = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.AvaControl:matchAppPlugin(307): Find plugin match. Loaded app plugins count: 2
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Spotify']
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Spotify' is 0.47985348105430603.
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.AvaControl:matchAppPlugin(316): Plugin match found. [plugin = 'Wolfram Alpha', likelihood = '1.0']
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.AvaControl:processUtterance(256): A plugin has been matched.
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha Who is the president of Germany?'].
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.AvaControl:processUtterance(270): A plugin has been matched. Try to match a command of that plugin. [utterance = 'Wolfram Alpha Who is the president of Germany?']
+INFO  2016-06-05 22:36:15,208 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(147): Started matching of input to loaded commands.
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:36:15,208 [main] org.ava.matching.CommandMatch:<init>(43): CommandMatch created [likelihood = 1.0, command = Wolfram Alpha *, variable part = 'Who is the president of Germany?']
+INFO  2016-06-05 22:36:15,209 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(203): Input matched to command [command = 'Wolfram Alpha *', similarity = 1.0', variable part = 'Who is the president of Germany?'].
+DEBUG 2016-06-05 22:36:15,209 [main] com.ava.commands.QueryExecution:execute(32): Starting command execution with given parameter 'Who is the president of Germany?'.
+INFO  2016-06-05 22:36:15,209 [main] com.ava.WAExecuter:sendQuery(100): Create Wolfram Alpha a query for the question: Who is the president of Germany?
+DEBUG 2016-06-05 22:36:15,210 [main] com.ava.WAExecuter:sendQuery(104): Query URL: http://api.wolframalpha.com/v2/query?appid=L2H6WP-4EAK9WP67E&input=Who+is+the+president+of+Germany%3F&format=plaintext&async=false&reinterpret=true
+DEBUG 2016-06-05 22:36:18,389 [main] com.ava.WAExecuter:sendQuery(114): Query succesful performed.
+DEBUG 2016-06-05 22:36:18,389 [main] com.ava.WAExecuter:sendQuery(115): Returnd amount of pods 6
+DEBUG 2016-06-05 22:36:18,390 [main] com.ava.WAExecuter:sendQuery(116): Needed time for query: 2.55 sec.
+DEBUG 2016-06-05 22:36:18,390 [main] com.ava.WAExecuter:getResultString(137): Extract result string from WAQueryResult object.
+DEBUG 2016-06-05 22:36:18,390 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Input
+DEBUG 2016-06-05 22:36:18,390 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Result
+DEBUG 2016-06-05 22:36:18,390 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: BasicInformation:LeaderData
+DEBUG 2016-06-05 22:36:18,390 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderSequence
+DEBUG 2016-06-05 22:36:18,390 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderDataPersonalInformationPod:PeopleData
+DEBUG 2016-06-05 22:36:18,390 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Image:PeopleData
+DEBUG 2016-06-05 22:36:18,390 [main] com.ava.commands.QueryExecution:execute(40): Get result from Wolfram Alpha REST API: 'Joachim Gauck  (from 18. March 2012  to  today)'.
+DEBUG 2016-06-05 22:36:18,390 [main] org.ava.eventhandling.TTSEventBus:fireSspeakEvent(68): Fire SspeakEvent. Listener: org.ava.AvaControl$6@69379752
+DEBUG 2016-06-05 22:36:18,390 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:36:18,391 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-05 22:36:18,391 [Thread-16] org.ava.marytts.MaryTTSController:run(92): Aborted audio output [audio player = Thread[Thread-14,5,]]
+DEBUG 2016-06-05 22:36:18,599 [Thread-16] org.ava.marytts.MaryTTSController:run(110): Started audio output [audio player = Thread[Thread-17,5,main]]
+INFO  2016-06-05 22:36:32,057 [main] org.ava.CUI:getCommandLine(173): Read 'Wolfram Alpha : Wolfram Alpha Who is the president of Germany?' from console.
+DEBUG 2016-06-05 22:36:32,057 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter Wolfram Alpha : Wolfram Alpha Who is the president of Germany?
+DEBUG 2016-06-05 22:36:32,057 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(29): CommandEnteredEvent created. Entered command: Wolfram Alpha : Wolfram Alpha Who is the president of Germany?
+DEBUG 2016-06-05 22:36:32,057 [main] org.ava.eventhandling.UIEventBus:fireCommandEnteredEvent(187): Fire CommandEnteredEvent. Event: org.ava.eventhandling.CommandEnteredEvent@42561fba, Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:36:32,057 [main] org.ava.AvaControl:executeEnteredCommand(151): Console command processing mode entered.
+DEBUG 2016-06-05 22:36:32,057 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha'].
+DEBUG 2016-06-05 22:36:32,057 [main] org.ava.AvaControl:processUtterance(253): Ava has been activated. Try to match plugin. [utterance = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.AvaControl:matchAppPlugin(307): Find plugin match. Loaded app plugins count: 2
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Spotify']
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Spotify' is 0.47985348105430603.
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.AvaControl:matchAppPlugin(316): Plugin match found. [plugin = 'Wolfram Alpha', likelihood = '1.0']
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.AvaControl:processUtterance(256): A plugin has been matched.
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha Who is the president of Germany?'].
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.AvaControl:processUtterance(270): A plugin has been matched. Try to match a command of that plugin. [utterance = 'Wolfram Alpha Who is the president of Germany?']
+INFO  2016-06-05 22:36:32,058 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(147): Started matching of input to loaded commands.
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:36:32,058 [main] org.ava.matching.CommandMatch:<init>(43): CommandMatch created [likelihood = 1.0, command = Wolfram Alpha *, variable part = 'Who is the president of Germany?']
+INFO  2016-06-05 22:36:32,059 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(203): Input matched to command [command = 'Wolfram Alpha *', similarity = 1.0', variable part = 'Who is the president of Germany?'].
+DEBUG 2016-06-05 22:36:32,059 [main] com.ava.commands.QueryExecution:execute(32): Starting command execution with given parameter 'Who is the president of Germany?'.
+INFO  2016-06-05 22:36:32,059 [main] com.ava.WAExecuter:sendQuery(100): Create Wolfram Alpha a query for the question: Who is the president of Germany?
+DEBUG 2016-06-05 22:36:32,059 [main] com.ava.WAExecuter:sendQuery(104): Query URL: http://api.wolframalpha.com/v2/query?appid=L2H6WP-4EAK9WP67E&input=Who+is+the+president+of+Germany%3F&format=plaintext&async=false&reinterpret=true
+DEBUG 2016-06-05 22:36:34,653 [main] com.ava.WAExecuter:sendQuery(114): Query succesful performed.
+DEBUG 2016-06-05 22:36:34,653 [main] com.ava.WAExecuter:sendQuery(115): Returnd amount of pods 6
+DEBUG 2016-06-05 22:36:34,654 [main] com.ava.WAExecuter:sendQuery(116): Needed time for query: 2.301 sec.
+DEBUG 2016-06-05 22:36:34,654 [main] com.ava.WAExecuter:getResultString(137): Extract result string from WAQueryResult object.
+DEBUG 2016-06-05 22:36:34,654 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Input
+DEBUG 2016-06-05 22:36:34,654 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Result
+DEBUG 2016-06-05 22:36:34,654 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: BasicInformation:LeaderData
+DEBUG 2016-06-05 22:36:34,654 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderSequence
+DEBUG 2016-06-05 22:36:34,654 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderDataPersonalInformationPod:PeopleData
+DEBUG 2016-06-05 22:36:34,655 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Image:PeopleData
+DEBUG 2016-06-05 22:36:34,655 [main] com.ava.commands.QueryExecution:execute(40): Get result from Wolfram Alpha REST API: 'Joachim Gauck  (from 18. March 2012  to  today)'.
+DEBUG 2016-06-05 22:36:34,655 [main] org.ava.eventhandling.TTSEventBus:fireSspeakEvent(68): Fire SspeakEvent. Listener: org.ava.AvaControl$6@69379752
+DEBUG 2016-06-05 22:36:34,655 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:36:34,655 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-05 22:36:34,655 [Thread-20] org.ava.marytts.MaryTTSController:run(92): Aborted audio output [audio player = Thread[Thread-17,5,]]
+DEBUG 2016-06-05 22:36:34,834 [Thread-20] org.ava.marytts.MaryTTSController:run(110): Started audio output [audio player = Thread[Thread-21,5,main]]
+INFO  2016-06-05 22:36:58,945 [main] org.ava.CUI:getCommandLine(173): Read 'Wolfram Alpha : Wolfram Alpha Who is the president of England?' from console.
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter Wolfram Alpha : Wolfram Alpha Who is the president of England?
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(29): CommandEnteredEvent created. Entered command: Wolfram Alpha : Wolfram Alpha Who is the president of England?
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.eventhandling.UIEventBus:fireCommandEnteredEvent(187): Fire CommandEnteredEvent. Event: org.ava.eventhandling.CommandEnteredEvent@325f7fa9, Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.AvaControl:executeEnteredCommand(151): Console command processing mode entered.
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha'].
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.AvaControl:processUtterance(253): Ava has been activated. Try to match plugin. [utterance = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.AvaControl:matchAppPlugin(307): Find plugin match. Loaded app plugins count: 2
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Spotify']
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Spotify' is 0.47985348105430603.
+DEBUG 2016-06-05 22:36:58,945 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:36:58,946 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:36:58,946 [main] org.ava.AvaControl:matchAppPlugin(316): Plugin match found. [plugin = 'Wolfram Alpha', likelihood = '1.0']
+DEBUG 2016-06-05 22:36:58,946 [main] org.ava.AvaControl:processUtterance(256): A plugin has been matched.
+DEBUG 2016-06-05 22:36:58,946 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha Who is the president of England?'].
+DEBUG 2016-06-05 22:36:58,946 [main] org.ava.AvaControl:processUtterance(270): A plugin has been matched. Try to match a command of that plugin. [utterance = 'Wolfram Alpha Who is the president of England?']
+INFO  2016-06-05 22:36:58,946 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(147): Started matching of input to loaded commands.
+DEBUG 2016-06-05 22:36:58,946 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:36:58,946 [main] org.ava.matching.CommandMatch:<init>(43): CommandMatch created [likelihood = 1.0, command = Wolfram Alpha *, variable part = 'Who is the president of England?']
+INFO  2016-06-05 22:36:58,946 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(203): Input matched to command [command = 'Wolfram Alpha *', similarity = 1.0', variable part = 'Who is the president of England?'].
+DEBUG 2016-06-05 22:36:58,946 [main] com.ava.commands.QueryExecution:execute(32): Starting command execution with given parameter 'Who is the president of England?'.
+INFO  2016-06-05 22:36:58,946 [main] com.ava.WAExecuter:sendQuery(100): Create Wolfram Alpha a query for the question: Who is the president of England?
+DEBUG 2016-06-05 22:36:58,946 [main] com.ava.WAExecuter:sendQuery(104): Query URL: http://api.wolframalpha.com/v2/query?appid=L2H6WP-4EAK9WP67E&input=Who+is+the+president+of+England%3F&format=plaintext&async=false&reinterpret=true
+DEBUG 2016-06-05 22:37:03,405 [main] com.ava.WAExecuter:sendQuery(114): Query succesful performed.
+DEBUG 2016-06-05 22:37:03,405 [main] com.ava.WAExecuter:sendQuery(115): Returnd amount of pods 4
+DEBUG 2016-06-05 22:37:03,405 [main] com.ava.WAExecuter:sendQuery(116): Needed time for query: 4.154 sec.
+DEBUG 2016-06-05 22:37:03,405 [main] com.ava.WAExecuter:getResultString(137): Extract result string from WAQueryResult object.
+DEBUG 2016-06-05 22:37:03,405 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Input
+DEBUG 2016-06-05 22:37:03,405 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Result
+DEBUG 2016-06-05 22:37:03,405 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: BasicInformation:LeaderData
+DEBUG 2016-06-05 22:37:03,406 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderSequence
+DEBUG 2016-06-05 22:37:03,406 [main] com.ava.commands.QueryExecution:execute(40): Get result from Wolfram Alpha REST API: 'Joachim Gauck'.
+DEBUG 2016-06-05 22:37:03,406 [main] org.ava.eventhandling.TTSEventBus:fireSspeakEvent(68): Fire SspeakEvent. Listener: org.ava.AvaControl$6@69379752
+DEBUG 2016-06-05 22:37:03,406 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:37:03,406 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-05 22:37:03,406 [Thread-24] org.ava.marytts.MaryTTSController:run(92): Aborted audio output [audio player = Thread[Thread-21,5,]]
+DEBUG 2016-06-05 22:37:03,536 [Thread-24] org.ava.marytts.MaryTTSController:run(110): Started audio output [audio player = Thread[Thread-25,5,main]]
+INFO  2016-06-05 22:37:21,090 [main] org.ava.CUI:getCommandLine(173): Read 'Wolfram Alpha : Wolfram Alpha Who is the president of the United States of America?' from console.
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter Wolfram Alpha : Wolfram Alpha Who is the president of the United States of America?
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(29): CommandEnteredEvent created. Entered command: Wolfram Alpha : Wolfram Alpha Who is the president of the United States of America?
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.eventhandling.UIEventBus:fireCommandEnteredEvent(187): Fire CommandEnteredEvent. Event: org.ava.eventhandling.CommandEnteredEvent@771158fb, Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.AvaControl:executeEnteredCommand(151): Console command processing mode entered.
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha'].
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.AvaControl:processUtterance(253): Ava has been activated. Try to match plugin. [utterance = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.AvaControl:matchAppPlugin(307): Find plugin match. Loaded app plugins count: 2
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Spotify']
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Spotify' is 0.47985348105430603.
+DEBUG 2016-06-05 22:37:21,090 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:37:21,091 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:37:21,091 [main] org.ava.AvaControl:matchAppPlugin(316): Plugin match found. [plugin = 'Wolfram Alpha', likelihood = '1.0']
+DEBUG 2016-06-05 22:37:21,091 [main] org.ava.AvaControl:processUtterance(256): A plugin has been matched.
+DEBUG 2016-06-05 22:37:21,091 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha Who is the president of the United States of America?'].
+DEBUG 2016-06-05 22:37:21,091 [main] org.ava.AvaControl:processUtterance(270): A plugin has been matched. Try to match a command of that plugin. [utterance = 'Wolfram Alpha Who is the president of the United States of America?']
+INFO  2016-06-05 22:37:21,091 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(147): Started matching of input to loaded commands.
+DEBUG 2016-06-05 22:37:21,091 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:37:21,091 [main] org.ava.matching.CommandMatch:<init>(43): CommandMatch created [likelihood = 1.0, command = Wolfram Alpha *, variable part = 'Who is the president of the United States of America?']
+INFO  2016-06-05 22:37:21,091 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(203): Input matched to command [command = 'Wolfram Alpha *', similarity = 1.0', variable part = 'Who is the president of the United States of America?'].
+DEBUG 2016-06-05 22:37:21,091 [main] com.ava.commands.QueryExecution:execute(32): Starting command execution with given parameter 'Who is the president of the United States of America?'.
+INFO  2016-06-05 22:37:21,091 [main] com.ava.WAExecuter:sendQuery(100): Create Wolfram Alpha a query for the question: Who is the president of the United States of America?
+DEBUG 2016-06-05 22:37:21,091 [main] com.ava.WAExecuter:sendQuery(104): Query URL: http://api.wolframalpha.com/v2/query?appid=L2H6WP-4EAK9WP67E&input=Who+is+the+president+of+the+United+States+of+America%3F&format=plaintext&async=false&reinterpret=true
+DEBUG 2016-06-05 22:37:24,516 [main] com.ava.WAExecuter:sendQuery(114): Query succesful performed.
+DEBUG 2016-06-05 22:37:24,517 [main] com.ava.WAExecuter:sendQuery(115): Returnd amount of pods 8
+DEBUG 2016-06-05 22:37:24,517 [main] com.ava.WAExecuter:sendQuery(116): Needed time for query: 3.002 sec.
+DEBUG 2016-06-05 22:37:24,517 [main] com.ava.WAExecuter:getResultString(137): Extract result string from WAQueryResult object.
+DEBUG 2016-06-05 22:37:24,517 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Input
+DEBUG 2016-06-05 22:37:24,518 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Result
+DEBUG 2016-06-05 22:37:24,518 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: BasicInformation:LeaderData
+DEBUG 2016-06-05 22:37:24,518 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderSequence
+DEBUG 2016-06-05 22:37:24,518 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: GovernmentStructure:LeaderData
+DEBUG 2016-06-05 22:37:24,518 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderDataPersonalInformationPod:PeopleData
+DEBUG 2016-06-05 22:37:24,518 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Image:PeopleData
+DEBUG 2016-06-05 22:37:24,519 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: NotableFacts:PeopleData
+DEBUG 2016-06-05 22:37:24,519 [main] com.ava.commands.QueryExecution:execute(40): Get result from Wolfram Alpha REST API: 'Barack Obama  (from 20. January 2009  to  today)'.
+DEBUG 2016-06-05 22:37:24,519 [main] org.ava.eventhandling.TTSEventBus:fireSspeakEvent(68): Fire SspeakEvent. Listener: org.ava.AvaControl$6@69379752
+DEBUG 2016-06-05 22:37:24,519 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:37:24,519 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-05 22:37:24,519 [Thread-27] org.ava.marytts.MaryTTSController:run(92): Aborted audio output [audio player = Thread[Thread-25,5,]]
+DEBUG 2016-06-05 22:37:24,691 [Thread-27] org.ava.marytts.MaryTTSController:run(110): Started audio output [audio player = Thread[Thread-28,5,main]]
+INFO  2016-06-05 22:39:32,000 [main] org.ava.CUI:getCommandLine(173): Read 'Wolfram Alpha : Wolfram Alpha Who is the chancellor of Germany?' from console.
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter Wolfram Alpha : Wolfram Alpha Who is the chancellor of Germany?
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(29): CommandEnteredEvent created. Entered command: Wolfram Alpha : Wolfram Alpha Who is the chancellor of Germany?
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.eventhandling.UIEventBus:fireCommandEnteredEvent(187): Fire CommandEnteredEvent. Event: org.ava.eventhandling.CommandEnteredEvent@62d0ac62, Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.AvaControl:executeEnteredCommand(151): Console command processing mode entered.
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha'].
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.AvaControl:processUtterance(253): Ava has been activated. Try to match plugin. [utterance = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.AvaControl:matchAppPlugin(307): Find plugin match. Loaded app plugins count: 2
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Spotify']
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Spotify' is 0.47985348105430603.
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:39:32,000 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:39:32,001 [main] org.ava.AvaControl:matchAppPlugin(316): Plugin match found. [plugin = 'Wolfram Alpha', likelihood = '1.0']
+DEBUG 2016-06-05 22:39:32,001 [main] org.ava.AvaControl:processUtterance(256): A plugin has been matched.
+DEBUG 2016-06-05 22:39:32,001 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha Who is the chancellor of Germany?'].
+DEBUG 2016-06-05 22:39:32,001 [main] org.ava.AvaControl:processUtterance(270): A plugin has been matched. Try to match a command of that plugin. [utterance = 'Wolfram Alpha Who is the chancellor of Germany?']
+INFO  2016-06-05 22:39:32,001 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(147): Started matching of input to loaded commands.
+DEBUG 2016-06-05 22:39:32,001 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:39:32,001 [main] org.ava.matching.CommandMatch:<init>(43): CommandMatch created [likelihood = 1.0, command = Wolfram Alpha *, variable part = 'Who is the chancellor of Germany?']
+INFO  2016-06-05 22:39:32,001 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(203): Input matched to command [command = 'Wolfram Alpha *', similarity = 1.0', variable part = 'Who is the chancellor of Germany?'].
+DEBUG 2016-06-05 22:39:32,001 [main] com.ava.commands.QueryExecution:execute(32): Starting command execution with given parameter 'Who is the chancellor of Germany?'.
+INFO  2016-06-05 22:39:32,001 [main] com.ava.WAExecuter:sendQuery(100): Create Wolfram Alpha a query for the question: Who is the chancellor of Germany?
+DEBUG 2016-06-05 22:39:32,001 [main] com.ava.WAExecuter:sendQuery(104): Query URL: http://api.wolframalpha.com/v2/query?appid=L2H6WP-4EAK9WP67E&input=Who+is+the+chancellor+of+Germany%3F&format=plaintext&async=false&reinterpret=true
+DEBUG 2016-06-05 22:39:35,554 [main] com.ava.WAExecuter:sendQuery(114): Query succesful performed.
+DEBUG 2016-06-05 22:39:35,554 [main] com.ava.WAExecuter:sendQuery(115): Returnd amount of pods 8
+DEBUG 2016-06-05 22:39:35,554 [main] com.ava.WAExecuter:sendQuery(116): Needed time for query: 3.103 sec.
+DEBUG 2016-06-05 22:39:35,555 [main] com.ava.WAExecuter:getResultString(137): Extract result string from WAQueryResult object.
+DEBUG 2016-06-05 22:39:35,555 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Input
+DEBUG 2016-06-05 22:39:35,555 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Result
+DEBUG 2016-06-05 22:39:35,555 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: BasicInformation:LeaderData
+DEBUG 2016-06-05 22:39:35,555 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderSequence
+DEBUG 2016-06-05 22:39:35,555 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: GovernmentStructure:LeaderData
+DEBUG 2016-06-05 22:39:35,555 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderDataPersonalInformationPod:PeopleData
+DEBUG 2016-06-05 22:39:35,555 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Image:PeopleData
+DEBUG 2016-06-05 22:39:35,556 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: NotableFacts:PeopleData
+DEBUG 2016-06-05 22:39:35,556 [main] com.ava.commands.QueryExecution:execute(40): Get result from Wolfram Alpha REST API: 'Angela Merkel  (from 22. November 2005  to  today)'.
+DEBUG 2016-06-05 22:39:35,556 [main] org.ava.eventhandling.TTSEventBus:fireSspeakEvent(68): Fire SspeakEvent. Listener: org.ava.AvaControl$6@69379752
+DEBUG 2016-06-05 22:39:35,556 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:39:35,556 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-05 22:39:35,557 [Thread-31] org.ava.marytts.MaryTTSController:run(92): Aborted audio output [audio player = Thread[Thread-28,5,]]
+DEBUG 2016-06-05 22:39:35,725 [Thread-31] org.ava.marytts.MaryTTSController:run(110): Started audio output [audio player = Thread[Thread-32,5,main]]
+INFO  2016-06-05 22:40:06,497 [main] org.ava.CUI:getCommandLine(173): Read 'Wolfram Alpha : Wolfram Alpha Who is the president of England?' from console.
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.CUI:handleCommand(183): HandleCommand method is called with parameter Wolfram Alpha : Wolfram Alpha Who is the president of England?
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.eventhandling.UtteranceRecognizedEvent:<init>(29): CommandEnteredEvent created. Entered command: Wolfram Alpha : Wolfram Alpha Who is the president of England?
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.eventhandling.UIEventBus:fireCommandEnteredEvent(187): Fire CommandEnteredEvent. Event: org.ava.eventhandling.CommandEnteredEvent@6826c41e, Listener: org.ava.AvaControl$3@2698dc7
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.AvaControl:executeEnteredCommand(151): Console command processing mode entered.
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha'].
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.AvaControl:processUtterance(253): Ava has been activated. Try to match plugin. [utterance = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.AvaControl:matchAppPlugin(307): Find plugin match. Loaded app plugins count: 2
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Spotify']
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Spotify' is 0.47985348105430603.
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.AvaControl:matchAppPlugin(309): Match utterance to plugin. [utterance = 'Wolfram Alpha', plugin = 'Wolfram Alpha']
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.AvaControl:matchAppPlugin(316): Plugin match found. [plugin = 'Wolfram Alpha', likelihood = '1.0']
+DEBUG 2016-06-05 22:40:06,497 [main] org.ava.AvaControl:processUtterance(256): A plugin has been matched.
+DEBUG 2016-06-05 22:40:06,498 [main] org.ava.AvaControl:processUtterance(233): Utterance processing started. [utterance = 'Wolfram Alpha Who is the president of England?'].
+DEBUG 2016-06-05 22:40:06,498 [main] org.ava.AvaControl:processUtterance(270): A plugin has been matched. Try to match a command of that plugin. [utterance = 'Wolfram Alpha Who is the president of England?']
+INFO  2016-06-05 22:40:06,498 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(147): Started matching of input to loaded commands.
+DEBUG 2016-06-05 22:40:06,498 [main] org.ava.matching.DefaultMatchingEngine:computeSimilarity(274): Similarity of 'Wolfram Alpha' and 'Wolfram Alpha' is 1.0.
+DEBUG 2016-06-05 22:40:06,498 [main] org.ava.matching.CommandMatch:<init>(43): CommandMatch created [likelihood = 1.0, command = Wolfram Alpha *, variable part = 'Who is the president of England?']
+INFO  2016-06-05 22:40:06,498 [main] org.ava.matching.DefaultMatchingEngine:matchCommand(203): Input matched to command [command = 'Wolfram Alpha *', similarity = 1.0', variable part = 'Who is the president of England?'].
+DEBUG 2016-06-05 22:40:06,498 [main] com.ava.commands.QueryExecution:execute(32): Starting command execution with given parameter 'Who is the president of England?'.
+INFO  2016-06-05 22:40:06,498 [main] com.ava.WAExecuter:sendQuery(100): Create Wolfram Alpha a query for the question: Who is the president of England?
+DEBUG 2016-06-05 22:40:06,498 [main] com.ava.WAExecuter:sendQuery(104): Query URL: http://api.wolframalpha.com/v2/query?appid=L2H6WP-4EAK9WP67E&input=Who+is+the+president+of+England%3F&format=plaintext&async=false&reinterpret=true
+DEBUG 2016-06-05 22:40:11,084 [main] com.ava.WAExecuter:sendQuery(114): Query succesful performed.
+DEBUG 2016-06-05 22:40:11,085 [main] com.ava.WAExecuter:sendQuery(115): Returnd amount of pods 4
+DEBUG 2016-06-05 22:40:11,085 [main] com.ava.WAExecuter:sendQuery(116): Needed time for query: 4.162 sec.
+DEBUG 2016-06-05 22:40:11,085 [main] com.ava.WAExecuter:getResultString(137): Extract result string from WAQueryResult object.
+DEBUG 2016-06-05 22:40:11,085 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Input
+DEBUG 2016-06-05 22:40:11,085 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: Result
+DEBUG 2016-06-05 22:40:11,085 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: BasicInformation:LeaderData
+DEBUG 2016-06-05 22:40:11,085 [main] com.ava.WAExecuter:getResultString(147): Received pod from Wolfram ALpha backend: LeaderSequence
+DEBUG 2016-06-05 22:40:11,086 [main] com.ava.commands.QueryExecution:execute(40): Get result from Wolfram Alpha REST API: 'Joachim Gauck'.
+DEBUG 2016-06-05 22:40:11,086 [main] org.ava.eventhandling.TTSEventBus:fireSspeakEvent(68): Fire SspeakEvent. Listener: org.ava.AvaControl$6@69379752
+DEBUG 2016-06-05 22:40:11,086 [main] org.ava.AvaControl:resetCurrentProcessingState(299): Reset current state of utterance processing.
+DEBUG 2016-06-05 22:40:11,086 [main] org.ava.CUI:getCommandLine(167): Starting prompt in console
+DEBUG 2016-06-05 22:40:11,086 [Thread-35] org.ava.marytts.MaryTTSController:run(92): Aborted audio output [audio player = Thread[Thread-32,5,]]
+DEBUG 2016-06-05 22:40:11,217 [Thread-35] org.ava.marytts.MaryTTSController:run(110): Started audio output [audio player = Thread[Thread-36,5,main]]

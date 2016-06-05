@@ -90,10 +90,10 @@ public class Main {
 
 		for(int i = 0; i < len; i++) {
 
-			if( i+1 == args.length ) {
-				log.fatal("Missing parameter at the command line after '" + args[i] + "'. Programm will terminate.");
-				return false;
-			}
+			//if( i+1 == args.length ) {
+			//	log.fatal("Missing parameter at the command line after '" + args[i] + "'. Programm will terminate.");
+			//	return false;
+			//}
 
 			switch(args[i]) {
 				case "-configDir":
