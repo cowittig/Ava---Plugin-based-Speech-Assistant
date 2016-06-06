@@ -70,7 +70,9 @@ public class DefaultMatchingEngine implements MatchingEngine {
 				fixedPart = fixedPart.trim();
 
 				// adjust wordLengthFixedPart
-				wordLengthFixedPart++;
+				if( wordLengthFixedPart != 0 ) {
+					wordLengthFixedPart++;
+				}
 
 				return fixedPart;
 			}
