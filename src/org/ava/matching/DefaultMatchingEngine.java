@@ -270,7 +270,7 @@ public class DefaultMatchingEngine implements MatchingEngine {
 		double likelihood = 0;
 
 		JaroWinkler jw = new JaroWinkler();
-		likelihood = jw.similarity(toMatch, target);
+		likelihood = jw.similarity(toMatch.toLowerCase(), target.toLowerCase());
 		log.debug("Similarity of '" + toMatch + "' and '" + target + "' is " + likelihood + ".");
 
 		return likelihood;
