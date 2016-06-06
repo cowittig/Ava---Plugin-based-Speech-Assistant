@@ -271,8 +271,15 @@ public class DefaultMatchingEngine implements MatchingEngine {
 	private double computeSimilarity(String toMatch, String target) {
 		double likelihood = 0;
 
+		// special case: command is '*'. both strings will be empty and similarity therefore
+		// will be 0.0, even though we expect a 1.0
+		if( toMatch.toLowerCase().trim().isEmpty() && target.toLowerCase().trim().isEmpty() ) {
+			return 1.0;
+		}
+
+		// regular case
 		JaroWinkler jw = new JaroWinkler();
-		likelihood = jw.similarity(toMatch.toLowerCase(), target.toLowerCase());
+		likelihood = jw.similarity(toMatch.toLowerCase().trim(), target.toLowerCase().trim());
 		log.debug("Similarity of '" + toMatch + "' and '" + target + "' is " + likelihood + ".");
 
 		return likelihood;
