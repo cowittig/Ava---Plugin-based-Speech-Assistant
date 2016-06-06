@@ -256,6 +256,9 @@ public class AvaControl {
 				log.debug("A plugin has been matched.");
 				currentMatchedPlugin = ap;
 				isPluginActivated = true;
+				if( !isConsoleCommandMode ) {
+					playConfirmationSound();
+				}
 				return;
 			} else {
 				log.debug("No plugin match found. Trigger reset of current processing state.");
