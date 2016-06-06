@@ -53,9 +53,7 @@ public class Main {
 		ArrayList<String> propList = new ArrayList<String>();
 		propList.add("PLUGINDIR");
 		propList.add("CONFIGDIR");
-		propList.add("LOGDIR");
 		propList.add("LOGLEVEL");
-		propList.add("LOGNAME");
 		propList.add("CUI_ACTIVE");
 
 		String tmp = null;
