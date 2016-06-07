@@ -10,6 +10,7 @@ import java.util.Scanner;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineEvent.Type;
 import javax.sound.sampled.LineListener;
@@ -341,7 +342,6 @@ public class AvaControl {
 	 */
 	private void playConfirmationSound() {
 		try{
-			Clip clip = AudioSystem.getClip();
 
 			class AudioListener implements LineListener {
 				private boolean done = false;
@@ -363,6 +363,8 @@ public class AvaControl {
 			AudioListener listener = new AudioListener();
 	        AudioInputStream inputStream = AudioSystem.getAudioInputStream(new BufferedInputStream(
 	        		Files.newInputStream(Paths.get("./res/ping.wav"))));
+	        DataLine.Info info = new DataLine.Info(Clip.class, inputStream.getFormat());
+	        Clip clip = (Clip) AudioSystem.getLine(info);
 	        clip.open(inputStream);
 	        clip.addLineListener(listener);
 	        try{
