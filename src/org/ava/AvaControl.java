@@ -274,6 +274,7 @@ public class AvaControl {
 			CommandMatch cm = matchAppCommand(utterance);
 			if( cm != null ) {
 				cm.getCommand().execute(cm.getVariablePart());
+				resetCurrentProcessingState();
 				return;
 			} else {
 				log.debug("No command match found. Trigger reset of current processing state.");
