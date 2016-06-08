@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.core.Appender;
@@ -59,7 +60,8 @@ public class CUI {
 		log.debug("Building the menue string to display the menu.");
 		String horLine = "##############################################################################\n"; 
 		String nl = "\n"; 
-		StringBuilder sb = new StringBuilder(); 
+		StringBuilder sb = new StringBuilder();
+		sb.append(nl); 
 		sb.append(horLine);
 		sb.append(nl); 
 		sb.append("                  Ava Configuration User Interface\n");
@@ -82,12 +84,13 @@ public class CUI {
 		sb.append("Ava Configuration User Interface Help\n");
 		sb.append(nl); 
 		sb.append("Commands\n"); 
-		sb.append("\t-help\t\t\tPrints the CUI help.\n"); 
-		sb.append("\t-[de]activate {ID}\t(De)Activate a plug-in with the given ID.\n"); 
-		sb.append("\t-commands\t\tList all commands of the loaded plug-ins.\n"); 
-		sb.append("\t-exit\t\t\tClose this Console User Interface.\n"); 
-		sb.append("\t-list\t\t\tShows all loaded plug-ins with the ID, name and status.\n");
-		sb.append("\t-shutdown\t\tShutdown the application.\n");
+		sb.append("\t-h or -help\t\t\tPrints the CUI help.\n"); 
+		sb.append("\t-a or -activate {ID}\tActivate a plug-in with the given ID.\n"); 
+		sb.append("\t-d or -deactivate {ID}\tDeactivate a plug-in with the given ID.\n"); 
+		sb.append("\t-c or -commands\t\tList all commands of the loaded plug-ins.\n"); 
+		sb.append("\t-l or -list\t\t\tShows all loaded plug-ins with the ID, name and status.\n");
+		sb.append("\t-e or -exit\t\t\tClose this Console User Interface.\n"); 
+		sb.append("\t-s or -shutdown\t\tShutdown the application.\n");
 		// TODO help string must be completed
 		sb.append(nl); 
 		sb.append(horLine); 
@@ -144,22 +147,24 @@ public class CUI {
 		if( this.isStarted ) {
 			this.isActiv = false; 
 			
-			try {
+			// do not close readers because they will close underlying System.in stream.
+			// it is then not possible to open the System.in stream again to reactivate the CUI!
+			/*try {
 				
 				if( this.reader != null ) {
 					log.debug("Closing BufferedReader.");
-					this.reader.close();
-					this.reader = null; 
+					//this.reader.close();
+					//this.reader = null; 
 				}
 				
 				if( this.isr != null ) {
 					log.debug("Closing StreamInputReader.");
-					this.isr.close();
-					this.isr = null; 
+					//this.isr.close();
+					//this.isr = null; 
 				}
 			} catch (IOException e) {
-				log.catching(e);
-			}
+				log.catching(Level.DEBUG, e);
+			}*/
 			
 			log.info("CUI closed.");
 			
@@ -188,7 +193,7 @@ public class CUI {
 			line = this.reader.readLine();
 			log.info("Read '" + line + "' from console.");
 		} catch (IOException e) {
-			log.catching(e);
+			log.catching(Level.DEBUG, e);
 		} 
 		
 		return line; 
@@ -207,16 +212,18 @@ public class CUI {
 			return; 
 		}
 		
-		if( command.startsWith("-activate") ) {
+		if( command.startsWith("-activate") || command.startsWith("-a") ) {
 			String[] args = command.split(" ");
 			UIEventBus.getInstance().firePluginActiavtionStateChangedEvent(
 					new PluginActivationStateChangedEvent(args[1].trim(), PluginActivationState.ACTIVATED));
+			return;
 		}
 		
-		if( command.startsWith("-deactivate") ) {
+		if( command.startsWith("-deactivate") || command.startsWith("-d") ) {
 			String[] args = command.split(" ");
 			UIEventBus.getInstance().firePluginActiavtionStateChangedEvent(
 					new PluginActivationStateChangedEvent(args[1].trim(), PluginActivationState.DEACTIVATED));
+			return;
 		}
 		
 		switch(command) {
@@ -225,28 +232,37 @@ public class CUI {
 			break; 
 		
 		case "-list":
+		case "-l":
 			printLoadedPlugins(control.getLoadedPlugins());
 			break;
 			
 		case "-commands": 
+		case "-c":
 			this.printAllCommands(); 
 			break;
 		
 		case "-help": 
+		case "-h":
 			this.printHelp();
 			break; 
 			
 		case "-exit": 
+		case "-e":
 			this.exitConsoleControl();
 			break; 
 			
 		case "-shutdown":
+		case "-s":
+			// exit console control first, so that shutdown messages will be displayed.
+			exitConsoleControl();
 			UIEventBus.getInstance().fireShutdownTriggeredEvent();
 			break;
 			
 		default: 
-			//System.out.println("Undefined command. Type --help for help.");
-			//log.debug("Undefined command. Nothing will be done.");
+			if( command.startsWith("-") ) {
+				System.out.println("Undefined command. Type -help for a list of available commands.");
+				log.debug("Undefined command. Nothing will be done.");
+			}
 			UIEventBus.getInstance().fireCommandEnteredEvent(new CommandEnteredEvent(command));
 			break; 
 		}
