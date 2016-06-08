@@ -106,6 +106,8 @@ public class AvaControl {
 		createUIEventListeners();
 		createTTSEventListeners();
 
+		playBootSound();
+		
 		// start user interface
 		if( ApplicationConfig.isCui_active() ){
 			CUI c = new CUI(this);
@@ -333,6 +335,14 @@ public class AvaControl {
 				pluginManager.getPluginProperties(currentMatchedPlugin).getID());
 	}
 
+	private void playBootSound() {
+		new Thread( () -> {playSound("./res/bootsound.wav");}, "boot-sound" ).start();
+	}
+	
+	private void playConfirmationSound() {
+		playSound("./res/ping.wav");
+	}
+	
 	/**
 	 * I don't even know why it's so complicated to play a simple sound.
 	 * Thanks to Stackoverflow to make this happen!
@@ -340,7 +350,7 @@ public class AvaControl {
 	 * http://stackoverflow.com/a/26318
 	 * http://stackoverflow.com/a/577926
 	 */
-	private void playConfirmationSound() {
+	private void playSound(String soundFilePath) {
 		try{
 
 			class AudioListener implements LineListener {
@@ -362,16 +372,16 @@ public class AvaControl {
 
 			AudioListener listener = new AudioListener();
 	        AudioInputStream inputStream = AudioSystem.getAudioInputStream(new BufferedInputStream(
-	        		Files.newInputStream(Paths.get("./res/ping.wav"))));
+	        		Files.newInputStream(Paths.get(soundFilePath))));
 	        DataLine.Info info = new DataLine.Info(Clip.class, inputStream.getFormat());
 	        Clip clip = (Clip) AudioSystem.getLine(info);
 	        clip.open(inputStream);
 	        clip.addLineListener(listener);
 	        try{
-	        	log.debug("Play confirmation sound.");
+	        	log.debug("Play sound: " + soundFilePath);
 	        	clip.start();
 	        	listener.waitUntilDone();
-	        	log.debug("Play confirmation sound done.");
+	        	log.debug("Play  sound done.");
 	        } finally {
 	        	clip.close();
 	        	inputStream.close();
