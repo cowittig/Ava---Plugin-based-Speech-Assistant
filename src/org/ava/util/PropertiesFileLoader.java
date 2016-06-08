@@ -1,18 +1,12 @@
 package org.ava.util;
 
-import java.io.BufferedInputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Enumeration;
 import java.util.Properties;
-import java.util.TreeSet;
-
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -194,7 +188,6 @@ public class PropertiesFileLoader {
 	 * Reads the properties file at the stored propertiesFilePath and propertiesFileName in this object.
 	 * If these attributes null or false, nothing will be done.
 	 */
-	@SuppressWarnings("serial")
 	public boolean readPropertiesFile() {
 		log.debug("Try to load the properties file: " + this.propertiesFilePath + this.propertiesFileName);
 		File propertiesFile = null;
@@ -215,34 +208,12 @@ public class PropertiesFileLoader {
 			return false;
 		}
 
-		// create properties object and override keys(), so that properties will be stored in
-		// an alphabetically fashion
-		// code snippet from: http://stackoverflow.com/a/17011319
-		properties = new Properties() {
-			@Override
-		    public synchronized Enumeration<Object> keys() {
-		        return Collections.enumeration(new TreeSet<Object>(super.keySet()));
-		    }
-		};
-
-		if( propertiesFile.exists() ) {
-
-			BufferedInputStream bis;
-			try {
-				bis = new BufferedInputStream(new FileInputStream(propertiesFile));
-				properties.load(bis);
-				bis.close();
-				log.info("Properties file '" + this.propertiesFilePath + this.propertiesFileName + "' loaded.");
-
-			} catch (IOException e) {
-				log.catching(Level.DEBUG, e);
-				return false;
-			}
+		properties = PropertiesFileCache.getProperties(propertiesFile);
+		if( properties != null ) {
+			return true;
 		} else {
-			log.error("Properties file does not exist or can't be found. Filepath: " + this.propertiesFilePath + this.propertiesFileName);
 			return false;
 		}
-		return true;
 	}
 
 	/**
