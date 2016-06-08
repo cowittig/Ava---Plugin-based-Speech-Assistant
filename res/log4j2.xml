@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration status="OFF">
+<configuration status="INFO" name="Ava">
 	<Properties>
-		<Property name="LOG_DIR">.\</Property>
+		<Property name="LOG_DIR">./</Property>
 		<Property name="LOG_NAME">ava.log</Property>
 		<Property name="PATTERN">%-5level %d [%t] %c:%M(%L): %m%n</Property>
 	</Properties>
@@ -11,15 +11,15 @@
       <PatternLayout pattern="${PATTERN}"/>
     </Console>
 
-    <File name="log4jLogFile" fileName="${LOG_DIR}${LOG_NAME}" append="false">
+    <File name="log4jLogFile" fileName="${LOG_DIR}${LOG_NAME}" immediateFlush="true" append="false">
         <PatternLayout pattern="${PATTERN}"/>
     </File>
   </appenders>
 
   <loggers>
     <root level="INFO">
-      <appender-ref ref="Console" />
-      <appender-ref ref="log4jLogFile" />
+      <AppenderRef ref="Console" />
+      <AppenderRef ref="log4jLogFile" />
     </root>
   </loggers>
 </configuration>
