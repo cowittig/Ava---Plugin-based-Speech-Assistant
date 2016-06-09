@@ -17,18 +17,8 @@ import org.apache.logging.log4j.Logger;
  * While using this class, the attributes propertiesFilePath and propertiesFileName have to be valid.
  *
  * @author Kevin
- * @version 1.2
+ * @version 1.3
  * @since 13.03.2016
- *
- * Changelog:
- * 2016-03-20 Constantin v1.1
- * 		-- Added constructor to support nio file api.
- * 2016-03-26 Constantin v1.2
- * 		-- Added constant for a header comment.
- * 		-- Added support for removing properties.
- * 		-- Added a separate method to store Properties in file.
- * 		-- Override keys() method of Properties object, so that properties
- * 		   are stored alphabetically
  *
  */
 public class PropertiesFileLoader {
@@ -37,11 +27,34 @@ public class PropertiesFileLoader {
 
 	/** This string will be printed as a header comment to the properteries file. */
 	private static final String PROPERTY_FILE_HEADER_COMMENT =
-			  "#####################################################################\n"
-			+ "#                                                                    #\n"
-			+ "# Configuration file for Ava, the speech assistant for your home.    #\n"
-			+ "#                                                                    #\n"
-			+ "######################################################################";
+			  "###########################################################################################\n"
+			+ "#                                                                                          #\n"
+			+ "#           Configuration file for Ava, the speech assistant for your home.                #\n"
+			+ "#                                                                                          #\n"
+			+ "# Possible options:                                                                        #\n"
+			+ "#                                                                                          #\n"
+			+ "#    -- ACTIVATION PHRASE    = The phrase or word that activates Ava from idle mode.       #\n"
+			+ "#    -- CONFIGDIR            = The path to the configuration directory containing this     #\n"
+			+ "#                              file. Default directory is: ./res/                          #\n"
+			+ "#    -- CUI_ACTIVE           = Wether the CUI is activated at startup. Possible values:    #\n"
+			+ "#                              true or false.                                              #\n"
+			+ "#    -- LOGLEVEL             = How verbose Ava's output is. Possible values:               #\n"
+			+ "#                                  OFF: no logging                                         #\n"
+			+ "#                                  FATAL: errors that impact core functionality            #\n"
+			+ "#                                  ERROR: less harmful errors, application might continue  #\n"
+			+ "#                                  INFO: general information messages                      #\n"
+			+ "#                                  DEBUG: verbose output for debugging purposes            #\n"
+			+ "#                              Each level will incorparte the messages from the level      #\n"
+			+ "#                              above. So INFO will include: INFO + ERROR + FATAL.          #\n"
+			+ "#    -- MATCHING_TRESHOLD    = The threshold above which matches will be accepted by       #\n"
+			+ "#                              the matching engine. For reliable results the treshold      #\n"
+			+ "#                              should be above 0.9.                                        #\n"
+			+ "#    -- PLUGINDIR            = The path to the plugin directory. Default directory is:     #\n"
+			+ "#                              ./plugins/                                                  #\n"
+			+ "#                                                                                          #\n"
+			+ "# All other options are automatically created and maintaned by Ava.                        #\n"
+			+ "#                                                                                          #\n"
+			+ "############################################################################################\n";
 
 	private String propertiesFilePath = "./"; /*src/com/sttPlugin.properties"; */
 	private String propertiesFileName = "";
