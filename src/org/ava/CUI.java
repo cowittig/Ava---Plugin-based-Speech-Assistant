@@ -277,14 +277,16 @@ public class CUI {
 			System.out.println("No plugins found. "
 					+ "Please make sure your plugins are in the directory specified in the Ava configuration file.");
 		} else {
-			System.out.println("ID\tName\t\tStatus");
+			System.out.println(String.format("%1$2s\t%2$25s\t%3$10s\t%4$s",
+					"ID", "Name", "Version", "Status"));
 			for( PluginWrapper pw : loadedPlugins ) {
 				PluginProperties pp = pw.getProperties();
+				String activationState = "DEACTIVATED";
 				if( pw.getPluginActivationState() == PluginActivationState.ACTIVATED ) {
-					System.out.println(pp.getID() + "\t" + pp.getName() + "\tACTIVATED");
-				} else {
-					System.out.println(pp.getID() + "\t" + pp.getName() + "\tDEACTIVATED");
+					activationState = "ACTIVATED";
 				}
+				System.out.format(String.format("%1$2s\t%2$25s\t%3$10s\t%4$s\n",
+						pp.getID(), pp.getName(), pp.getVersion(), activationState));
 			}
 		}
 	}
