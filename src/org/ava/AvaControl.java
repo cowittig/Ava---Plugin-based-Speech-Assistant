@@ -1,19 +1,9 @@
 package org.ava;
 
-import java.io.BufferedInputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.LineEvent;
-import javax.sound.sampled.LineEvent.Type;
-import javax.sound.sampled.LineListener;
 import javax.swing.JFrame;
 
 import org.apache.logging.log4j.Level;
@@ -293,6 +283,7 @@ public class AvaControl {
 
 	private void speakText(String msg) {
 		if( currentTTSEngine != null ) {
+			log.debug("Speak output triggered. [msg = '" + msg + "']");
 			currentTTSEngine.sayText(msg);
 		} else {
 			log.error("Speech output failed: No TTS plugin active. [msg = '" + msg + "']");
