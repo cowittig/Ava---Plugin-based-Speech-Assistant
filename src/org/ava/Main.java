@@ -47,7 +47,7 @@ public class Main {
 
 		if( !loader.readPropertiesFile() ) {
 			log.fatal("No properties file to initialize Ava found. Application will terminate.");
-			return;
+			System.exit(-1);
 		}
 
 		ArrayList<String> propList = new ArrayList<String>();
@@ -93,26 +93,27 @@ public class Main {
 			//	return false;
 			//}
 
+			log.info("Parsing program arguments.");
 			switch(args[i]) {
 				case "-configDir":
 					configDir = args[i+1];
 					i++;
-					log.debug("ConfigDir changed by command line to " + configDir);
+					log.debug("ConfigDir changed to " + configDir);
 					break;
 				case "-configName":
 					configName = args[i+1];
 					i++;
-					log.debug("ConfigName changed by command line to " + configName);
+					log.debug("ConfigName changed to " + configName);
 					break;
 				case "-pluginDir":
 					ApplicationConfig.setPluginDir(args[i+1]);
 					i++;
-					log.info("pluginDir changed by command line to " +  ApplicationConfig.getPluginDir());
+					log.info("pluginDir changed to " +  ApplicationConfig.getPluginDir());
 					break;
 				case "-logLevel":
 					ApplicationConfig.setLogLevel(args[i+1]);
 					i++;
-					log.info("logLevel changed by command line to " +  ApplicationConfig.getLogLevel());
+					log.info("logLevel changed to " +  ApplicationConfig.getLogLevel());
 					break;
 				case "-cui_active":
 					String cui_active = args[i+1];
@@ -120,7 +121,7 @@ public class Main {
 					if( cui_active.equals("true") )
 						ApplicationConfig.setCui_active(true);
 					i++;
-					log.info("Cui_active changed by command line to " + cui_active);
+					log.info("Cui_active changed to " + cui_active);
 					break;
 			}
 		}

@@ -69,8 +69,8 @@ public class PropertiesFileLoader {
 		this.propertiesFilePath = propertiesFilePath;
 		this.propertiesFileName = propertiesFileName;
 		log.debug("PropertiesFileLoader instance created.");
-		log.info("PropertiesFilePath is set to: " + this.propertiesFilePath);
-		log.info("PropertiesFileName is set to: " + this.propertiesFileName);
+		log.debug("PropertiesFilePath is set to: " + this.propertiesFilePath);
+		log.debug("PropertiesFileName is set to: " + this.propertiesFileName);
 	}
 
 	public PropertiesFileLoader(Path propertiesFilePath) throws IllegalArgumentException {
@@ -83,8 +83,8 @@ public class PropertiesFileLoader {
 		this.propertiesFilePath = tmp.substring(0, tmp.length() - propertiesFilePath.getFileName().toString().length());
 		this.propertiesFileName = propertiesFilePath.getFileName().toString();
 		log.debug("PropertiesFileLoader instance created.");
-		log.info("PropertiesFilePath is set to: " + this.propertiesFilePath);
-		log.info("PropertiesFileName is set to: " + this.propertiesFileName);
+		log.debug("PropertiesFilePath is set to: " + this.propertiesFilePath);
+		log.debug("PropertiesFileName is set to: " + this.propertiesFileName);
 	}
 
 
@@ -97,7 +97,7 @@ public class PropertiesFileLoader {
 		log.debug("setPropertiesFilePath is called with argument path '" + path + "'.");
 		if( path != null || path != "" ) {
 			this.propertiesFilePath = path;
-			log.info("Properties file path was set to: " + path);
+			log.debug("Properties file path was set to: " + path);
 		}
 
 		log.error("Path for the property file is not valid.");
@@ -109,7 +109,7 @@ public class PropertiesFileLoader {
 		log.debug("setPropertiesFileName is called with argument path '" + name + "'.");
 		if( name != null || name != "") {
 			this.propertiesFileName = name;
-			log.info("Properties file name was set to: " + name);
+			log.debug("Properties file name was set to: " + name);
 		}
 	}
 
@@ -136,7 +136,7 @@ public class PropertiesFileLoader {
 
 
 		this.properties.setProperty(key, value);
-		log.info("Key with value '" + key + " : " + value + "' added/modified to the Properties file "
+		log.info("Key with value '" + key + " : " + value + "' added/modified in Properties file "
 				+ this.propertiesFileName);
 
 		if(storePropertiesFile()) {
@@ -261,7 +261,7 @@ public class PropertiesFileLoader {
 	 * @return NULL if everything ok or a String containing the missing property name.
 	 */
 	public String isPropertiesFileValid(ArrayList<String> propertyKeys) {
-		log.info("Validating " + this.propertiesFileName);
+		log.debug("Validating " + this.propertiesFileName);
 		if( this.properties == null ) {
 			log.error("There was no properties file loaded. PropertiesFileLoader.propertiesFileName is NULL");
 			return "No file to validate";
@@ -276,7 +276,7 @@ public class PropertiesFileLoader {
 			}
 		}
 
-		log.info("Properties file '" + this.propertiesFileName + "' ok.");
+		log.debug("Properties file '" + this.propertiesFileName + "' ok.");
 		return null;
 	}
 

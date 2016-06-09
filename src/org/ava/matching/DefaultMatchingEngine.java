@@ -146,7 +146,7 @@ public class DefaultMatchingEngine implements MatchingEngine {
 	 */
 	@Override
 	public CommandMatch matchCommand(String toMatch, int pluginID) {
-		log.info("Started matching of input to loaded commands.");
+		log.debug("Started matching of input to loaded commands.");
 		CommandMatch match = null;
 
 		// for each command of given plugin do:
@@ -200,7 +200,7 @@ public class DefaultMatchingEngine implements MatchingEngine {
 		}
 
 		if(match == null) {
-			log.info("No match found.");
+			log.info("No command match found.");
 		} else {
 			log.info("Input matched to command ["
 						+ "command = '" + match.getCommand().getCommand() + "', "

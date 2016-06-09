@@ -172,11 +172,12 @@ public class PluginManager {
 			log.catching(Level.DEBUG, e);
 		}
 		List<JarPropertyFilepathPair> filePairs = fileSearcher.getJarPropertyFilepathPairs();
-		log.debug(filePairs.size() + " Plugins found.");
 
 		if(filePairs.isEmpty()) {
 			log.info("No plugins in directory '" + ApplicationConfig.getPluginDir() + "' found.");
 			return;
+		} else {
+			log.info("Discoverd " + filePairs.size() + " plugins.");
 		}
 
 		// for each discoverd plugin, build PluginWrapper and PluginProperties

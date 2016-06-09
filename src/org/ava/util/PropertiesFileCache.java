@@ -16,11 +16,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class PropertiesFileCache {
-	
+
 	private final static Logger log = LogManager.getLogger(PropertiesFileCache.class);
 
 	private static Map<String, Properties> cache = new HashMap<String, Properties>();
-	
+
 	@SuppressWarnings("serial")
 	public static Properties getProperties(File propertiesFile) {
 		if( cache.containsKey(propertiesFile.getAbsolutePath()) ) {
@@ -35,14 +35,14 @@ public class PropertiesFileCache {
 			        return Collections.enumeration(new TreeSet<Object>(super.keySet()));
 			    }
 			};
-	
+
 			if( propertiesFile.exists() ) {
 				BufferedInputStream bis;
 				try {
 					bis = new BufferedInputStream(new FileInputStream(propertiesFile));
 					properties.load(bis);
 					bis.close();
-					log.info("Properties file '" + propertiesFile.getAbsolutePath() + "' loaded.");
+					log.debug("Properties file '" + propertiesFile.getAbsolutePath() + "' loaded.");
 					cache.put(propertiesFile.getAbsolutePath(), properties);
 					return properties;
 				} catch (IOException e) {
