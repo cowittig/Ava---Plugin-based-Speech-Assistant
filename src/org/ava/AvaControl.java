@@ -43,6 +43,7 @@ import org.ava.pluginengine.PluginWrapper;
 import org.ava.pluginengine.STTPlugin;
 import org.ava.pluginengine.TTSPlugin;
 import org.ava.util.ApplicationConfig;
+import org.ava.util.AvaUtil;
 
 public class AvaControl {
 
@@ -107,7 +108,7 @@ public class AvaControl {
 		createTTSEventListeners();
 
 		playBootSound();
-		
+
 		// start user interface
 		if( ApplicationConfig.isCui_active() ){
 			CUI c = new CUI(this);
@@ -336,60 +337,14 @@ public class AvaControl {
 	}
 
 	private void playBootSound() {
-		new Thread( () -> {playSound("./res/bootsound.wav");}, "boot-sound" ).start();
+		new Thread( () -> {AvaUtil.playSound("./res/bootsound.wav");}, "boot-sound" ).start();
 	}
-	
+
 	private void playConfirmationSound() {
-		playSound("./res/ping.wav");
+		AvaUtil.playSound("./res/ping.wav");
 	}
-	
-	/**
-	 * I don't even know why it's so complicated to play a simple sound.
-	 * Thanks to Stackoverflow to make this happen!
-	 *
-	 * http://stackoverflow.com/a/26318
-	 * http://stackoverflow.com/a/577926
-	 */
-	private void playSound(String soundFilePath) {
-		try{
 
-			class AudioListener implements LineListener {
-				private boolean done = false;
 
-				@Override
-				public synchronized void update(LineEvent event) {
-					Type eventType = event.getType();
-				    if (eventType == Type.STOP || eventType == Type.CLOSE) {
-				    	done = true;
-				        notifyAll();
-				      }
-				    }
-
-				public synchronized void waitUntilDone() throws InterruptedException {
-				      while (!done) { wait(); }
-				}
-			};
-
-			AudioListener listener = new AudioListener();
-	        AudioInputStream inputStream = AudioSystem.getAudioInputStream(new BufferedInputStream(
-	        		Files.newInputStream(Paths.get(soundFilePath))));
-	        DataLine.Info info = new DataLine.Info(Clip.class, inputStream.getFormat());
-	        Clip clip = (Clip) AudioSystem.getLine(info);
-	        clip.open(inputStream);
-	        clip.addLineListener(listener);
-	        try{
-	        	log.debug("Play sound: " + soundFilePath);
-	        	clip.start();
-	        	listener.waitUntilDone();
-	        	log.debug("Play  sound done.");
-	        } finally {
-	        	clip.close();
-	        	inputStream.close();
-	        }
-		} catch(Exception ex) {
-			log.catching(Level.DEBUG, ex);
-		}
-	}
 
 	public List<PluginWrapper> getLoadedPlugins() {
 		return new ArrayList<PluginWrapper>(pluginManager.getPluginList().values());
