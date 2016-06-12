@@ -1,7 +1,7 @@
 package org.ava.pluginengine; 
 
 /**
- * Specialized interface for Speech-To-Text Plugins extends from IPlugin. 
+ * Specialized interface for Speech-To-Text Plugins extends from Plugin. 
  * STT Plugins have to implement this interface to can be use as Plugin. 
  * 
  * @author Kevin
