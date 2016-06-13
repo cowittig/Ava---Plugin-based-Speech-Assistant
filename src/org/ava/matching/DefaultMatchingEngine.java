@@ -161,11 +161,18 @@ public class DefaultMatchingEngine implements MatchingEngine {
 				String[] toMatchWordList = toMatch.split(" ");
 				String toMatchFixedPart = "";
 				int ii = 0;
-				while( ii < this.fixedPartMapping.get(pluginID).get(c).getFixedPartLength() ) {
-					toMatchFixedPart = toMatchFixedPart + toMatchWordList[ii] + " ";
-					ii++;
+				if( this.fixedPartMapping.get(pluginID).get(c).getFixedPartLength() <= toMatchWordList.length ) {
+					while( ii < this.fixedPartMapping.get(pluginID).get(c).getFixedPartLength() ) {
+						toMatchFixedPart = toMatchFixedPart + toMatchWordList[ii] + " ";
+						ii++;
+					}
+					toMatchFixedPart = toMatchFixedPart.trim();
+				} else {
+					log.debug("Utterance is shorter than current command. Skip to next command. "
+							+ "[utterance = '" + toMatch + "', "
+							+ "command = '" + this.fixedPartMapping.get(pluginID).get(c).getFixedPart() + "']");
+					continue;
 				}
-				toMatchFixedPart = toMatchFixedPart.trim();
 
 				// build variablePart
 				String toMatchVariablePart = "";
