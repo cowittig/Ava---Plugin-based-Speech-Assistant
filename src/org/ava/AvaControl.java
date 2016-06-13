@@ -29,6 +29,7 @@ import org.ava.pluginengine.AppPlugin;
 import org.ava.pluginengine.Plugin;
 import org.ava.pluginengine.PluginActivationState;
 import org.ava.pluginengine.PluginManager;
+import org.ava.pluginengine.PluginType;
 import org.ava.pluginengine.PluginWrapper;
 import org.ava.pluginengine.STTPlugin;
 import org.ava.pluginengine.TTSPlugin;
@@ -172,11 +173,11 @@ public class AvaControl {
 					Plugin p = pluginManager.activatePlugin(pluginID);
 
 					if( p instanceof STTPlugin ) {
-						pluginManager.stopPlugin(currentSTTEngine);
+						pluginManager.deactivatePlugin(currentSTTEngine);
 						currentSTTEngine = (STTPlugin) p;
 						log.debug("Current STT plugin changed to plugin '" + event.getPluginID() + "'.");
 					} else if( p instanceof TTSPlugin ) {
-						pluginManager.stopPlugin(currentTTSEngine);
+						pluginManager.deactivatePlugin(currentTTSEngine);
 						currentTTSEngine = (TTSPlugin) p;
 						log.debug("Current TTS plugin changed to plugin '" + event.getPluginID() + "'.");
 					} else if( p instanceof AppPlugin ) {
@@ -185,19 +186,19 @@ public class AvaControl {
 								pluginManager.getPluginProperties(p).getID());
 					}
 				} else {
-					Plugin p = pluginManager.deactivatePlugin(Integer.parseInt(event.getPluginID()));
+					PluginType p = pluginManager.deactivatePlugin(Integer.parseInt(event.getPluginID()));
 
-					if( p instanceof STTPlugin ) {
-						pluginManager.stopPlugin(currentSTTEngine);
+					if( p == PluginType.STT_PLUGIN ) {
+						//pluginManager.stopPlugin(currentSTTEngine);
 						currentSTTEngine = null;
 						log.debug("No STT plugin active due to deactivation of plugin '" + event.getPluginID() + "'.");
-					} else if( p instanceof TTSPlugin ) {
-						pluginManager.stopPlugin(currentTTSEngine);
+					} else if( p == PluginType.TTS_PLUGIN ) {
+						//pluginManager.deactivatePlugin(currentTTSEngine);
 						currentTTSEngine = null;
 						log.debug("No TTS plugin active due to deactivation of plugin '" + event.getPluginID() + "'.");
-					} else if( p instanceof AppPlugin ) {
+					} else if( p == PluginType.APPLICATION_PLUGIN ) {
 						matchingEngine.removeApplicationCommands(
-								pluginManager.getPluginProperties(p).getID());
+								Integer.parseInt(event.getPluginID()));
 					}
 				}
 			}

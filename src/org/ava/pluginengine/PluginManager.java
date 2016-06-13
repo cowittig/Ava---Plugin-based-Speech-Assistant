@@ -351,13 +351,23 @@ public class PluginManager {
 		return pw.getPluginInstance();
 	}
 
-	public Plugin deactivatePlugin(int pluginID) {
+	public PluginType deactivatePlugin(int pluginID) {
 		PluginWrapper pw = pluginList.get(pluginID);
 		pw.setPluginActivationState(PluginActivationState.DEACTIVATED);
 		log.debug("PluginActivationState of plugin '" + pluginID + "' changed to 'DEACTIVATED'.");
 		this.stopPlugin(pw);
 		removeLoadedPluginFromPropertyFile(pluginList.get(pluginID));
-		return pw.getPluginInstance();
+		return pw.getPluginType();
+	}
+
+	public PluginType deactivatePlugin(Plugin instance) {
+		PluginWrapper pw = findWrapperFromPluginInstance(instance);
+		if( pw == null ) {
+			log.fatal("Could not locate PluginWrapper. Deactivation of plugin failed.");
+			return null;
+		} else {
+			return deactivatePlugin(pw.getProperties().getID());
+		}
 	}
 
 	// pluginProperties convient methods.
