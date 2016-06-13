@@ -30,51 +30,56 @@ public class Main {
 	final static Logger log = LogManager.getLogger(Main.class);
 
 	public static void main(String[] args) {
-
-		boolean isCommandLineValid = true;
-
-		log.info(ApplicationConfig.appName + " started");
-		log.info("Version " + ApplicationConfig.version);
-
-		PropertiesFileLoader loader = null;
-
 		try {
-			loader = new PropertiesFileLoader(ApplicationConfig.getConfigDir(), ApplicationConfig.getConfigName());
-		} catch (NullPointerException e) {
-			log.catching(Level.DEBUG, e);
-			return;
-		}
+			boolean isCommandLineValid = true;
 
-		if( !loader.readPropertiesFile() ) {
-			log.fatal("No properties file to initialize Ava found. Application will terminate.");
+			log.info(ApplicationConfig.appName + " started");
+			log.info("Version " + ApplicationConfig.version);
+
+			PropertiesFileLoader loader = null;
+
+			try {
+				loader = new PropertiesFileLoader(ApplicationConfig.getConfigDir(), ApplicationConfig.getConfigName());
+			} catch (NullPointerException e) {
+				log.catching(Level.DEBUG, e);
+				return;
+			}
+
+			if( !loader.readPropertiesFile() ) {
+				log.fatal("No properties file to initialize Ava found. Application will terminate.");
+				System.exit(-1);
+			}
+
+			ArrayList<String> propList = new ArrayList<String>();
+			propList.add("PLUGINDIR");
+			propList.add("CONFIGDIR");
+			propList.add("LOGLEVEL");
+			propList.add("CUI_ACTIVE");
+
+			String tmp = null;
+			if( (tmp = loader.isPropertiesFileValid(propList)) != null ) {
+				log.fatal("There are missing properties in " + ApplicationConfig.getConfigName() + ". " + tmp + " is missing. ");
+				return;
+			}
+
+			initApplicationConfig(loader);
+
+			log.debug(args.length + " arguments are given with the program start form command line.");
+			if( args.length > 0 ) {
+				isCommandLineValid = handleArguments(args);
+			}
+			setLogConfiguration();
+
+			if ( isCommandLineValid ) {
+				new AvaControl();
+			} else {
+				log.error("Provide valid command line arguments.");
+				log.error("Ava is shuting down.");
+			}
+		} catch(Exception ex) {
+			System.err.println("An unrecoverable error occured, Ava will terminate.\nPlease check the log file for details.");
+			log.fatal("An unrecoverable error occured, Ava will terminate. Please check the log file for details.");
 			System.exit(-1);
-		}
-
-		ArrayList<String> propList = new ArrayList<String>();
-		propList.add("PLUGINDIR");
-		propList.add("CONFIGDIR");
-		propList.add("LOGLEVEL");
-		propList.add("CUI_ACTIVE");
-
-		String tmp = null;
-		if( (tmp = loader.isPropertiesFileValid(propList)) != null ) {
-			log.fatal("There are missing properties in " + ApplicationConfig.getConfigName() + ". " + tmp + " is missing. ");
-			return;
-		}
-
-		initApplicationConfig(loader);
-
-		log.debug(args.length + " arguments are given with the program start form command line.");
-		if( args.length > 0 ) {
-			isCommandLineValid = handleArguments(args);
-		}
-		setLogConfiguration();
-
-		if ( isCommandLineValid ) {
-			new AvaControl();
-		} else {
-			log.error("Provide valid command line arguments.");
-			log.error("Ava is shuting down.");
 		}
 	}
 
