@@ -1,1 +1,7 @@
 /bin/
+.classpath
+.project
+ava.log
+.settings/
+log/
+plugins/
