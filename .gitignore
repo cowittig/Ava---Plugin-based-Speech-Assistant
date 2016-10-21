@@ -2,6 +2,6 @@
 .classpath
 .project
 ava.log
-.settings/
-log/
-plugins/
+/.settings/
+/log/
+/plugins/
